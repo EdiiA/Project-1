@@ -1,0 +1,25 @@
+body{
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header, header>ul{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    border: 1px solid black;
+    background-color: rgba(0, 0, 0, 0.753);
+    /* color: rgba(255, 255, 255, 0.637); */
+    color: white;
+    height: 3em;
+    width: 100%;
+    align-items: center;
+}
+
+header>ul>li{
+    padding: 1.2em;
+    list-style: none;
+    font-size: 1em;
+}
