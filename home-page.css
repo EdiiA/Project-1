@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 header, header>ul{
@@ -11,15 +12,50 @@ header, header>ul{
 header{
     border: 1px solid black;
     background-color: rgba(0, 0, 0, 0.753);
-    /* color: rgba(255, 255, 255, 0.637); */
-    color: white;
     height: 3em;
     width: 100%;
     align-items: center;
+}
+
+header>ul>li>a{
+    color: white;
+    text-decoration: none;
+}
+
+header>ul>li>a:hover{
+    color: rgba(255, 255, 255, 0.637);
 }
 
 header>ul>li{
     padding: 1.2em;
     list-style: none;
     font-size: 1em;
+}
+
+.bgfoto{
+    width: 100%;
+    height: 55em;
+    background-image: url(Img/Cover-img-3.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.logo{
+    position: absolute;
+    border: 1px solid white;
+    width: 10em;
+    height: 10em;
+    margin-top: 6em;
+}
+
+.bgfoto p+p{
+    margin-top: 5.5em;
+    font-size: 3em;
 }
