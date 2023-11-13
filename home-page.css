@@ -11,8 +11,8 @@ header, header>ul{
 }
 
 header{
-    background-color: rgba(0, 0, 0, 0.753);
-    height: 3em;
+    background-color: #262626;
+    height: 1.3em;
     width: 100%;
     align-items: center;
 }
@@ -30,7 +30,7 @@ header>ul>li{
     padding: 1.2em;
     list-style: none;
     font-size: 1em;
-    margin-top: -1.4em;
+    margin-top: 0em;
 }
 
 .bgfoto{
@@ -49,23 +49,23 @@ header>ul>li{
     align-items: baseline;
 }
 
-.logo{
+.bg-logo{
     position: absolute;
     border: 1px solid white;
     width: 10em;
     height: 10em;
-    margin-top: 6em;
+    margin-top: 11em;
 }
 
 .bgfoto p+p{
-    margin-top: 5.5em;
+    margin-top: 7.5em;
     font-size: 3em;
 }
 
 .brands{
     width: 100%;
     height: 30em;
-    background-color: rgba(0, 0, 0, 0.934);
+    background-color: #262626;
     /* background-image: url(Img/Brands-img-1.png); */
     background-position: center;
     background-size: cover;
@@ -77,11 +77,35 @@ header>ul>li{
 .brands-title{
     font-size: 2em;
     position: absolute;
+    margin-top: -5em;
+    color: rgba(255, 255, 255, 0.637);
 }
 
-.line{
+/* .line{
+    position: absolute;
     background-color: aliceblue;
     width: 3em;
     height: 0.1em;
     margin-top: 5em;
+    display: block;
+} */
+
+.brands-text{
+    margin-top: -3.5em;
+}
+
+.logot{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 0px;
+    margin-top: 10em;
+    
+}
+
+.logo{
+    width: 80px;
+    height: 60px;
+    padding-left: 4.2em;
 }
