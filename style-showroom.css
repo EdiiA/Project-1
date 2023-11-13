@@ -2,7 +2,7 @@
 body{
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    
 }
 header{
    display: flex;
@@ -48,4 +48,41 @@ hr{
     height: 5px;
     margin: 3% 0;
     
+}
+.fotografit{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.foto-1{
+    border: 2px solid #333;
+    margin: 10px;
+
+    
+}
+.img{
+    width: 400px;
+    height: 260px;
+}
+.specifikat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.te-dhenat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+.logo-foto{
+    width: 60px;
+    height: 40px;
+
 }
