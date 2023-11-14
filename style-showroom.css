@@ -7,7 +7,7 @@ body{
 header{
    display: flex;
    flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.753);
+    background-color: #262626;
     height: 3em;
     align-items: center;
     justify-content: center;
@@ -43,8 +43,9 @@ header>ul>li>a:hover{
     height: 60px;
     margin-left: 4.2em;
 }
-hr{
-    background-color:rgba(0, 0, 0, 0.753);
+#hr1{
+    background-color: #262626;
+    border: 5px  #262626;
     height: 5px;
     margin: 3% 0;
     
@@ -56,8 +57,11 @@ hr{
     justify-content: center;
 }
 .foto-1{
-    border: 2px solid #333;
+    border: 1px solid  #c2c2c2;
     margin: 10px;
+    background-color:  #e2e2e2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
 
     
 }
@@ -71,6 +75,7 @@ hr{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
 
 }
 .te-dhenat{
@@ -84,5 +89,49 @@ hr{
 .logo-foto{
     width: 60px;
     height: 40px;
+}
+#hr2{
+    height: 1px;
+    background-color: #c2c2c2;
+    border: 1px #c2c2c2;
+    
+}
+footer{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: 400px;
+}
+.footeri{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    
+}
+#list-item{
+    text-decoration: none;
+    color: white;
+}
+.f-fotot{
+    /* padding-top: 40px; */
+    display: flex;
+    flex-direction: column;
 
+}  
+.img-f{
+    width: 64px;
+    height: 60px;
+    margin-left: 5px;
+}
+.img-1{
+    width: 70px;
+    height: 48px;
+    background-size: cover;
+    
 }
