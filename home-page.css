@@ -2,7 +2,7 @@ body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-color: darkgrey ;
+    background-color: #a9a9a9 ;
 }
 
 header, header>ul{
@@ -131,6 +131,7 @@ header>ul>li{
 .slider-text{
     width: 30em;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .slider-1{
