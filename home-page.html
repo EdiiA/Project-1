@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Autosallon</title>
     <link rel="stylesheet" href="home-page.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         <!-- Cover Image -->
         <div class="bgfoto">
             <p class="bg-logo"><img src="" alt="logo"></p>
-            <p>Emri</p>
+            <p>Emri</p> <!-- House Of Cars -->
         </div>
 
         <!-- Brands -->
@@ -44,9 +44,62 @@
                 <img src="Img/mercedes-benz-logo.png" alt="Merceds-benz" class="logo">
                 <img src="Img/Land_Rover_logo.png" alt="Landrover" class="logo">
                 <img src="Img/volkswagen-logo.png" alt="Wolkswagen" class="logo">
+            </div>
+        </div>
+        
+        <div class="slider-main">
+            <div class="slider-1">
+                <p class="slider-title">OUR SHOWROOM</p>
 
+                <!-- <hr class="line"> -->
+
+                <p class="slider-text">We export Lamborghini, Mercedes, Bmw, Audi, Volkswagen and all other major brand vehicles</p>
+            
+            </div>
+            
+            <div class="slider-2">    
+                <div class="slider-container">
+                    <div class="slides">
+                        <div class="slide"><img src="img/Cover-img-2.jpg" alt="Image 1"></div>
+                        <div class="slide"><img src="img/Cover-img-3.png" alt="Image 2"></div>
+                        <div class="slide"><img src="img/Cover-img.jpg" alt="Image 3"></div>
+                        <!-- Add more slides as needed -->
+                    </div>
+                
+                    <div class="prev">&#10094;</div>
+                    <div class="next">&#10095;</div>
+                </div>  
             </div>
         </div>
     </main>
+
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        document.querySelector('.next').addEventListener('click', () => {
+            if (currentIndex < totalSlides - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0;
+            }
+            updateSlider();
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = totalSlides - 1;
+            }
+            updateSlider();
+        });
+
+        function updateSlider() {
+            const translateValue = -currentIndex * 100 + '%';
+            slides.style.transform = `translateX(${translateValue})`;
+        }
+    </script>
 </body>
 </html>
