@@ -96,6 +96,25 @@ header>ul>li>a:hover{
     border: 1px #c2c2c2;
     
 }
+.butonat{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    background-color:#e2e2e2;
+    border-radius: 10%;
+}
+button:hover{
+    color: #c2c2c2;
+}
 footer{
     background-color: #262626;
     color: white;
