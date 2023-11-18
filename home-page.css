@@ -197,3 +197,39 @@ header>ul>li{
 .next {
     right: 10px;
 }
+
+.about-us{
+    width: 100%;
+    height: 40em;
+    flex-wrap: wrap;
+    background-image: url(Img/abstract-gray-mosaic-polygon-surfaced-background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-div{
+    background-color: #a9a9a9;
+    color: rgba(38, 38, 38, 0.696);
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-title{
+    font-size: 2em;
+}
+
+.about-us-div p+p{
+    width: 80%;
+    margin-top: -0.5em;
+}
