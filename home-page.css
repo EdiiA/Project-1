@@ -256,3 +256,35 @@ header>ul>li{
     position: relative;
     z-index: -1;
 }
+
+.client-parent{
+    width: 95%;
+    height: 23em;
+    display: flex;
+    flex-direction: row;
+}
+
+.client-child{
+    border-left: 1px solid #262626;
+    border-bottom: 1px solid #262626;
+    width: 33.3%;
+    height: 100%;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-child p{
+    width: 60%;
+    color: #262626;
+}
+
+.client-child p+p{
+    font-size: 1.3em;
+}
+
+.client-parent :nth-child(3){
+    border-right: 1px solid #262626;
+}
