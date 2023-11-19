@@ -288,3 +288,44 @@ header>ul>li{
 .client-parent :nth-child(3){
     border-right: 1px solid #262626;
 }
+
+footer{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+.footeri{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    
+}
+#list-item{
+    text-decoration: none;
+    color: white;
+}
+.f-fotot{
+    /* padding-top: 40px; */
+    display: flex;
+    flex-direction: column;
+
+}  
+.img-f{
+    width: 64px;
+    height: 60px;
+    margin-left: 5px;
+}
+.img-1{
+    width: 70px;
+    height: 48px;
+    background-size: cover;
+    
+}
