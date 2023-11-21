@@ -71,8 +71,8 @@ header>ul>li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: black;
-    font-size: 25px;
+    color: #262626;
+    font-size: 3em;
 }
 
 .about-us-1{
@@ -80,16 +80,86 @@ header>ul>li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 40em;
+    width: 100%;
+    color: #262626;
 }
 
 .about-img{
-    width: 40%;
-    height: 30em;
+    width: 35%;
+    height: 35em;
     flex-wrap: wrap;
     background-image: url(Img/Cover-img-3.png);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    margin-top: ;
+    background-repeat: no-repeat;   
+}
+
+.about-text-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5em;
+}
+
+#title-1{
+    font-size: 1.8em;
+}
+
+#text{
+    width: 36em;
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.3em;
+}
+
+.about-text-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5em;
+}
+
+footer{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+.footeri{
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+}
+#list-item{
+    text-decoration: none;
+    color: white;
+}
+.f-fotot{
+    /* padding-top: 40px; */
+    display: flex;
+    flex-direction: column;
+
+}  
+.img-f{
+    width: 64px;
+    height: 60px;
+    margin-left: 5px;
+}
+.img-1{
+    width: 70px;
+    height: 48px;
+    background-size: cover;
+    
 }
