@@ -262,6 +262,7 @@ header>ul>li{
     height: 23em;
     display: flex;
     flex-direction: row;
+    color: #262626;
 }
 
 .client-child{
@@ -274,6 +275,7 @@ header>ul>li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .client-parent :hover{
@@ -283,7 +285,7 @@ header>ul>li{
 
 .client-child p{
     width: 60%;
-    color: #262626;
+  
 }
 
 .client-child p+p{
