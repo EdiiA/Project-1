@@ -83,14 +83,21 @@ header>ul>li{
     margin-bottom: 0.5em;
 }
 
+#contact-txt{
+    font-size: 1.3em; 
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 3em;  
+}
+
 .mbikontakt{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 5em;
-    
+    margin-left: 5em;   
 }
+
 .div-1{
     display: flex;
     flex-direction:column;
@@ -127,7 +134,8 @@ header>ul>li{
 }
 .img{
     width: 3.5em;
-    height: 2.5em;
+    height: 3em;
+    object-fit: contain;
 }
 .div-con{
     background-color:#262626;
