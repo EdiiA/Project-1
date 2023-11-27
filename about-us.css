@@ -59,7 +59,7 @@ header>ul>li{
     display: flex;
     flex-direction: row;
     color: white;
-    font-size: 4em;
+    font-size: 5em;
     margin-top: 3em;
 }
 
@@ -102,16 +102,24 @@ header>ul>li{
     font-size: 3em;
 } */
 
+.h-m{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+}
+
 .about-us-1{
-    border: 1px solid #262626;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 35em;
-    width: 100%;
+    width: 80%;
     color: #262626;
-    margin-top: 2em;
+    margin-top: 3em;
+    
 }
 
 .about-img{
@@ -123,6 +131,8 @@ header>ul>li{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;   
+    margin-left: 0%;
+    margin-right: 0%;
 }
 
 .about-text-1{
