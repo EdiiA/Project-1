@@ -323,16 +323,14 @@ footer{
     /* padding-top: 40px; */
     display: flex;
     flex-direction: column;
-
 }  
+
 .img-f{
-    width: 64px;
-    height: 60px;
+    width: 3em;
     margin-left: 5px;
+    object-fit: cover;
 }
 .img-1{
-    width: 70px;
-    height: 48px;
-    background-size: cover;
-    
+    width: 3.5em;
+    object-fit: cover;
 }

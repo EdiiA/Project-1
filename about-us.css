@@ -28,6 +28,7 @@ header>ul>li{
     font-size: 1em;
     margin-top: 0em;
 }
+
 .bg-foto{
     margin-top: 0;
     margin-bottom: 2em;
@@ -45,16 +46,42 @@ header>ul>li{
     justify-content: center;
     align-items: center;
 }
-.bg-foto img{
+/* .bg-foto img{
     position: absolute;
     width: 10em;
     height: 10em;
     width: 35em;
     margin-top: 11em;
+} */
+
+.bg-title{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 4em;
+    margin-top: 3em;
 }
-.bg-foto p{
+
+/* .bg-foto p{
     border: 4px  dashed white ;
     padding: 1em;
+} */
+
+.text-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us-p{
+    font-size: 1.4em;
+    display: flex;
+    color: #262626;
+    width: 53%;
+    line-height: 1.5em;
+    text-align: center;
 }
 
 #hr1{
@@ -66,23 +93,25 @@ header>ul>li{
     margin-bottom: 0;
 }
 
-.title{
+/* .title{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     color: #262626;
     font-size: 3em;
-}
+} */
 
 .about-us-1{
+    border: 1px solid #262626;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 40em;
+    height: 35em;
     width: 100%;
     color: #262626;
+    margin-top: 2em;
 }
 
 .about-img{
@@ -153,13 +182,11 @@ footer{
 
 }  
 .img-f{
-    width: 64px;
-    height: 60px;
+    width: 3em;
     margin-left: 5px;
+    object-fit: cover;
 }
 .img-1{
-    width: 70px;
-    height: 48px;
-    background-size: cover;
-    
+    width: 3.5em;
+    object-fit: cover;
 }

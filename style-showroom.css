@@ -68,7 +68,7 @@ header>ul>li{
     justify-content: center;
     align-items: center;
     color: black;
-    font-size: 25px;
+    font-size: 3em;
 }
 .logot{
     display: flex;
@@ -117,7 +117,7 @@ header>ul>li{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    
+    color: #262626;
 
 }
 .te-dhenat{
@@ -126,7 +126,7 @@ header>ul>li{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-
+    color: #262626;
 }
 .logo-foto{
     width: 60px;
@@ -187,13 +187,11 @@ footer{
 
 }  
 .img-f{
-    width: 64px;
-    height: 60px;
+    width: 3em;
     margin-left: 5px;
+    object-fit: cover;
 }
 .img-1{
-    width: 70px;
-    height: 48px;
-    background-size: cover;
-    
+    width: 3.5em;
+    object-fit: cover;
 }
