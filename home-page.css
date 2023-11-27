@@ -117,6 +117,10 @@ header>ul>li{
     padding-left: 4.2em;
 }
 
+.logot :first-child{
+    padding-left: 0;
+}
+
 /* Slider */
 .slider-main{
     width: 100%;
