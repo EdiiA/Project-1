@@ -46,22 +46,21 @@ header>ul>li{
     justify-content: center;
     align-items: center;
 }
-/* .bg-foto img{
+
+.bg-foto img{
     position: absolute;
     width: 10em;
     height: 10em;
     width: 35em;
     margin-top: 11em;
-} */
+}
 
-.bg-title{
+/* .bg-title{
     position: absolute;
-    display: flex;
-    flex-direction: row;
     color: white;
     font-size: 5em;
     margin-top: 3em;
-}
+} */
 
 /* .bg-foto p{
     border: 4px  dashed white ;
@@ -75,14 +74,14 @@ header>ul>li{
     align-items: center;
 }
 
-#about-us-p{
+/* #about-us-p{
     font-size: 1.4em;
     display: flex;
     color: #262626;
     width: 53%;
     line-height: 1.5em;
     text-align: center;
-}
+} */
 
 #hr1{
     background-color: #262626;
@@ -90,24 +89,22 @@ header>ul>li{
     height: 2px;
     width: 90%;
     margin-right: 4.125em;
-    margin-bottom: 0;
+    margin-bottom: 0%;
 }
 
-/* .title{
+.title{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     color: #262626;
     font-size: 3em;
-} */
+    margin-top: 0%;
+    margin-bottom: 0.5em;
+}
 
 .h-m{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3em;
 }
 
 .about-us-1{
