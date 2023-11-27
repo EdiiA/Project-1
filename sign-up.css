@@ -1,0 +1,14 @@
+body{
+    margin: 0%;
+    background-image: url(Img/abstract-gray-mosaic-polygon-surfaced-background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.body{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
