@@ -76,6 +76,7 @@ body{
 
 #form-title{
     font-size: 2em;
+    margin-top: 2em;
 }
 
 .form{
@@ -86,11 +87,21 @@ body{
     align-items: center;
     font-size: 1.2em;
     flex-wrap: wrap;
-
+    margin-top: 3em;
 }
 
 .input-1{
     width: 10em;
+    height: 1.6em;
+}
+
+#email{
+    width: 13.5em;
+    height: 1.6em;
+}
+
+#password{
+    width: 10.7em;
     height: 1.6em;
 }
 
@@ -105,6 +116,10 @@ body{
 }
 
 .f-l-name{
+    margin-left: 1em;
+}
+
+.password{
     margin-left: 1em;
 }
 
