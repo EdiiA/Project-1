@@ -73,74 +73,67 @@ body{
     height: 100%;
     background-color: white;
 }
-
-#form-title{
-    font-size: 2em;
-    margin-top: 2em;
+.signUp-form h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: rgba(0, 0, 0, 0.2);
+    position: relative;
 }
-
-.form{
-    width: 100%;
-    color: #292929;
+.input-field{
+    background: #eaeaea;
+    margin: 15px 20px;
+    border-radius: 3px;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    font-size: 1.2em;
-    flex-wrap: wrap;
-    margin-top: 3em;
-}
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
 
-.input-1{
-    width: 10em;
-    height: 1.6em;
-}
 
-#email{
-    width: 13.5em;
-    height: 1.6em;
 }
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
 
-#password{
-    width: 10.7em;
-    height: 1.6em;
 }
+.input-field i{
+    margin-left: 15px;
+    color: #999;
 
-.input-2{
-    width: 12.1em;
-    height: 1.6em;
 }
-
-.input-3{
-    width: 11.6em;
-    height: 1.6em;
+form p{
+    text-align: left;
+    margin-left: 20px;
+    font-size: 13px;
 }
-
-.f-l-name{
-    margin-left: 1em;
+form p a{
+    text-decoration: none;
+    color: #3c00a0;
 }
-
-.password{
-    margin-left: 1em;
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
 }
-
-.f-l-name2{
-    margin-left: 1em;
+.btn-field button{
+    /* flex-basis: 48%; */
+    background:#3c00a0 ;
+    color: #fff;
+    height:40px;
+    width: 40%;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition:backgroud 1s;
 }
-
-#gjinia{
-    margin-left: 1em;
+.input-group{
+    height: 280px;
 }
-
-#remember{
-    margin-left: 16.5em;
-}
-
-#signUp-button{
-    width: 10em;
-    height: 3em;
-    margin-top: 2em;
-    background-color: #292929;
-    color: #a9a9a9;
-    font-size: 1.2em;
-    border-radius: 3em;
+.btn-field button.disable{
+    background: #eaeaea;
+    color: #555;
 }
