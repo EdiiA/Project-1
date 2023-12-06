@@ -24,22 +24,28 @@
         <div class="signUp-form">
             <p id="form-title">SIGN UP</p>
 
-            <form class="form">
-                <p class="f-l-name">First Name <input id="firstname" class="input-1" type="text" placeholder="Username..."></p>
+            <form class="form" onsubmit="validateForm()" method="post">
+                <label for="firstname">First Name</label>
+                <input id="firstname" name="firstname" type="text" placeholder="Username...">
 
-                <p class="f-l-name">Last Name <input id="lastname" class="input-1" type="text" placeholder="Lastname..."></p>
+                <label for="lastname">Last Name</label>
+                <input id="lastname" name="lastname" type="text" placeholder="Lastname...">
 
-                <p class="f-l-name">Email <input id="email" type="email" placeholder="Email..."></p>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="Email...">
         
-                <p class="password">Password <input id="password" class="input-2" type="password" placeholder="Password..."></p>
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password...">
 
-                <p class="f-l-name">Number <input id="number" class="input-3" type="number" placeholder="Number..."></p>
+                <label for="number">Number</label>
+                <input id="number" name="number" type="number" placeholder="Number...">
         
-                <p class="f-l-name2">Birthday <input id="birthday" class="input-3" type="date"></p>
+                <label for="birthday">Birthday</label>
+                <input id="birthday" name="birthday" type="date"></p>
         
                 <p id="gjinia">Sex: <input type="radio" name="Gjinia" value="M"> <span>M</span> <input type="radio" name="Gjinia" value="F"> <span>F</span></p>
 
-                <p><input type="checkbox" name="Remember Me" id="remember"> Remember Me</p>                
+                <p><input type="checkbox" name="rememberMe" id="remember"> Remember Me</p>                
             </form>
 
             <button id="signUp-button" type="button">Sign Up</button>
@@ -48,17 +54,40 @@
         </div>
     </div>
     
-    <!-- <script>
-        document.getElementById("firstname").innerText = prompt("Write your first name: ");
+    <script>
+        function validateForm(){
+            var fname = document.getElementById('firstname').value;
+            var lname = document.getElementById('lastname').value;
+            var em = document.getElementById('email').value;
+            var pass = document.getElementById('password').value;
+            var bDay = document.getElementById('birthday').value;
+            var btn = document.getElementById('signUp-button');
+            
+            var nameRegex = /^[a-zA-Z\s]\s+$/;
+            if(!nameRegex.test(fname)){
+                alert("Plese enter a valid name");
+                return false;
+            }
 
-        document.getElementById("lastname").innerText = prompt("Write your Last name: ");
+            var lnameRegex =  /^[a-zA-Z\s]\s+$/;
+            if(!lnameRegex.test(lname)){
+                alert("Plese enter a valid last name");
+                return false;
+            }
 
-        document.getElementById("email").innerText = prompt("Write your email: ");
-        
-        document.getElementById("password").innerText = prompt("Write your password: ");
+            var emailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+            if (!emailRegex.test(em)){
+                alert("Ju lutem te shtoni email'in valid.");
+                return false;
+            }
 
-        document.getElementById("number").innerText = prompt("Write your number: ");
-        
-    </script> -->
+            if(pass.length < 8){
+                alert("Passwordi duhet te jete me i madh se 8 karaktere.")
+                return false;
+            }
+
+            return false
+        }
+    </script>
 </body>
 </html>
