@@ -201,3 +201,39 @@ footer{
     background-size: cover;
     
 }
+@media only screen and (max-width: 1290px) {
+    .logot {
+        justify-content: space-around;
+    }
+
+    .headeri {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headeri ul {
+        margin-top: 1em;
+    }
+
+    .bg-foto img {
+        width: 100%;
+        height: auto;
+        margin-top: 2em;
+    }
+
+    .foto-1 {
+        width: 100%;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .footeri {
+        padding: 20px;
+    }
+
+    .f-fotot {
+        margin-top: 20px;
+    }
+}
