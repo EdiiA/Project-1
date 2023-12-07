@@ -355,3 +355,73 @@ footer{
     width: 3.5em;
     object-fit: cover;
 }
+
+@media screen and (max-width: 1290px) {
+    header>ul{
+        margin-left: -2.5em;
+    }
+
+    header{
+        height: 5em;
+        width: 430px;
+        align-items: center;
+    }
+    
+    header>ul>li{
+        padding: 0.4em;
+        list-style: none;
+        font-size: 1.2em;
+    }
+
+    .bgfoto{
+        width: 100%;
+        height: 35em;
+        background-position: bottom;
+    }
+
+    .bg-logo{
+        width: 85%;
+        margin-top: 7em;
+    }
+
+    .brands-title{
+        margin-top: -10em;
+    }
+
+    .brands-text{
+        margin-top: -8.5em;
+        text-align: center;
+    }
+
+    .logot{
+        width: 100%;
+    }
+
+    .logot :first-child{
+        padding-left: 3em;
+    }
+
+    .logo{
+        padding-left: 3em;
+    }
+
+    .slider-main{
+        border-top: 1px solid black ;
+        justify-content: center;
+        height: 50em;
+        flex-direction: column;
+    }
+
+    .slider-1, .slider-2{
+        width: 100%;
+    }
+
+    .slider-title{
+        margin-top: 0em;
+        text-align: center;
+    }
+
+    .slider-text{
+        width: 100%;
+    }
+}
