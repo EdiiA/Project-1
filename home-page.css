@@ -455,4 +455,32 @@ footer{
     .about-us-div p+p{
         width: 90%;
     }
+
+    .client{
+        
+    }
+
+    .client-bg-2{
+        height: 15em;
+        width: 95.5%;
+        margin-left: 0.1em;
+    }
+
+    video{
+        object-fit: cover;
+    }
+
+    .client-parent{
+        flex-direction: column;
+        height: 30em;
+    }
+
+    .client-child{
+        border: 1px solid #262626;
+        width: 100%;
+    }
+
+    .client-child p{
+        width: 80%; 
+    }
 }
