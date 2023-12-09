@@ -137,3 +137,53 @@ form p a{
     background: #eaeaea;
     color: #555;
 }
+@media screen and (max-width: 1200px) {
+    .sign-up{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        text-align: center; 
+        height: 140%;
+        margin-top: 3em;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 3em;
+    }
+    .signUp-form{
+        width: 85%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+    }
+    #text-title{
+        font-size:40px;
+        margin-top: 0;
+        width: 55%;
+    }
+    #text-title-2{
+        font-size: 35px;
+    }
+    .bgfoto{
+        justify-content: center;
+        align-items: center;
+    }
+    #logo1{
+        width: 10em;
+        height: 5em;
+        margin-right: 12em;
+        margin-top: 3em;
+        margin-bottom: 0;
+        
+    }
+    .bg-foto img{
+        
+        
+    }
+    .signUp-text{
+        width:85%;
+        height:40%;
+        margin-top: 1em;
+    }
+    #text-p{
+        width: 85%;
+        font-size: 12px;
+    }
+}
