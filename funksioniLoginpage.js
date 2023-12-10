@@ -20,12 +20,7 @@ function validateForm() {
         alert("The password must contain 6 characters");
         return false;
     }
-
-    
-
     return true;
-    
-    
 }
 function validateForm2() {
     var username = document.getElementById("username2").value;
@@ -38,7 +33,7 @@ function validateForm2() {
         return false;
     }
     if (password.length < 8) {
-        alert("The password must contain 6 characters");
+        alert("The password must contain 8 characters");
         return false;
     }
 
