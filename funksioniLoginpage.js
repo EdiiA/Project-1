@@ -11,6 +11,7 @@ function validateForm() {
         alert("Username can only contain letters and numbers");
         return false;
     }
+    
     var emailRegex=/^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
     if(!emailRegex.test(email)){
         alert("Please enter your email");
