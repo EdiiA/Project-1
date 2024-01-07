@@ -265,7 +265,6 @@ header>ul>li{
     width: 95%;
     height: 30em;
     flex-wrap: wrap;
-    z-index: -1;
     margin-bottom: 0%;
 }
 
@@ -377,7 +376,7 @@ footer{
 
     header{
         height: 5em;
-        width: 430px;
+        width: 100%;
         align-items: center;
     }
     
