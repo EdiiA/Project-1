@@ -7,14 +7,22 @@
     <title>CONTACT US</title>
 </head>
 <body>
-    <header>
+
+    <?php
+        include('header.php');
+
+        echo $header1;
+    ?>
+
+    <!-- <header>
         <ul>
             <li><a href="home-page.html">HOME</a></li>
             <li><a href="showroom.html">SHOWROOM</a></li>
             <li><a href="about-us.html">ABOUT US</a></li>
             <li><a href="contactus.html">CONTACT</a></li>
         </ul>
-    </header>
+    </header> -->
+
     <main>
         <!-- <div class="bgfoto">
             <p>CONTACT US</p>
@@ -69,7 +77,14 @@
         </div>
         
     </main>
-    <footer>
+    
+    <?php
+        include('footer.php');
+    
+        echo $footer1;
+    ?>
+
+    <!-- <footer>
         <div class="footeri">
             <div class="f-p1">
                 <h2>SHOWROOM</h2>
@@ -88,12 +103,6 @@
                     <p><a id="links" href="about-us.html">ABOUT US</a></p>
                     <p><a id="links" href="contactus.html">CONTACT US</a></p>
                 </div>
-
-                <!-- <ul class="lista">
-                    <l1><a id="list-item" href="">Company</a></l1>
-                    <l1><a id="list-item" href="">Company</a></l1>
-                    <l1><a id="list-item" href="">Company</a></l1>
-                </ul> -->
             </div>
             <div class="f-fotot">
                 <h2>Social Media</h2>
@@ -105,6 +114,6 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 </html>

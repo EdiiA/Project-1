@@ -8,15 +8,21 @@
 
 </head>
 <body>
-    <header class="headeri">
-        <!-- <img src="Img/logo-2.png" alt="" class="logo-kmp"> -->
+
+    <?php
+        include('header.php');
+
+        echo $header1;
+    ?>
+
+    <!-- <header class="headeri">
         <ul>
             <li><a href="home-page.html">HOME</a></li>
             <li><a href="showroom.html">SHOWROOM</a></li>
             <li><a href="about-us.html">ABOUT US</a></li>
             <li><a href="contactus.html">CONTACT US</a></li>
         </ul>
-    </header>
+    </header> -->
    
     
     <main>
@@ -160,7 +166,14 @@
             <button class="btn">4</button>
         </div>
     </main>
-    <footer>
+
+    <?php
+        include('footer.php');
+    
+        echo $footer1;
+    ?>
+
+    <!-- <footer>
         <div class="footeri">
             <div class="f-p1">
                 <h2>SHOWROOM</h2>
@@ -189,7 +202,7 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     
 </body>
 </html>
