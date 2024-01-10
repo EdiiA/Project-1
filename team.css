@@ -32,7 +32,7 @@ header>ul>li>a:hover{
 header>ul>li{
     padding: 1.2em;
     list-style: none;
-    font-size: 1em;
+    font-size: 0.8em;
     margin-top: 0em;
 }
 
@@ -226,7 +226,11 @@ footer{
         font-size: 2em; 
     }
 
+    .profile{
+        border: 1px solid #262626;
+    }
 
+    .team-img
 
     .footeri {
         display: flex;
