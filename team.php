@@ -27,7 +27,7 @@
 
         <div class="team">
             <div class="profile">
-                <div class="team-img"><img src="" alt=""></div>
+                <div class="team-img"></div>
 
                 <div class="team-txt">
                     <p id="team-title">Filan Fisteku</p>
@@ -37,19 +37,17 @@
             </div>
 
             <div class="profile">
-                
+                <div class="team-img"></div>
+
                 <div class="team-txt">
                     <p id="team-title">Filan Fisteku</p>
 
                     <p id="team-text">Exercitation ut ipsum nulla laborum consectetur nisi cillum. Aute ipsum ex ipsum consequat. Magna velit Lorem ad laboris nisi non laborum.</p>
                 </div>
-
-                <div class="team-img"><img src="" alt=""></div>
-
             </div>
 
             <div class="profile">
-                <div class="team-img"><img src="" alt=""></div>
+                <div class="team-img"></div>
 
                 <div class="team-txt">
                     <p id="team-title">Filan Fisteku</p>

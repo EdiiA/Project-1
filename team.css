@@ -226,11 +226,25 @@ footer{
         font-size: 2em; 
     }
 
-    .profile{
-        border: 1px solid #262626;
+    .team{
+        margin-bottom: 2em;
     }
 
-    .team-img
+    .profile{
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+
+    .team-img{
+        width: 60%;
+        height: 50%;
+    }
+
+    .team-txt{
+        width: 90%;
+        height: 40%;
+        text-align: center;
+    }
 
     .footeri {
         display: flex;
