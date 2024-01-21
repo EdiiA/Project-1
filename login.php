@@ -1,3 +1,6 @@
+<?php include('user.php');?>
+<?php include('validation.php');?>
+
 <html>
     <head>
         <meta charset="UTF-8">
@@ -11,7 +14,6 @@
         <div class="signUp-text">
             <div class="bgfoto2">
                 <p class="bg-logo"><img src="Img/logo-1.png" alt="logo"></p>
-                <!-- <p>Emri</p> House Of Cars -->
             </div>
             <p id="text-title">WELCOME</p>
             <p id="text-title-2">Always!</p>
@@ -23,27 +25,24 @@
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="username2" placeholder="Username">
+                        <input type="text" id="username2" name="name" placeholder="Username">
                     </div>
                     
                     <div class="input-field">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" id="password2" placeholder="Password">
+                        <input type="password" id="password2" name="psw" placeholder="Password">
                     </div>
+
                     <p>Lost password <a href="#">Click Here!</a></p>
                     <p>Not a member? <a href="sign-up.php">Sign up</a> </p>
                 </div>
-                <div class="btn-field">
-                    
-                    <button type="submit" id="signupBtn">Login </button>
-                    
 
+                <div class="btn-field">
+                    <button type="submit" name="submit" id="signupBtn">Login </button>
                 </div>
             </form>
-        
         </div>
         <script src="funksioniLoginpage.js"></script>
     </div>
-    
 </body>
 </html>
