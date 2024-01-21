@@ -19,7 +19,7 @@
     </div>
     <div class="signUp-form">
         <h1 id="title">Sign UP</h1>
-        <form action="home-page.html" onsubmit="return validateForm()" >
+        <form action="home-page.php" onsubmit="return validateForm()" >
             <div class="input-group">
                 <div class="input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
@@ -34,11 +34,11 @@
                     <input type="password" id="password" placeholder="Password">
                 </div>
                 <p>Lost password <a href="#">Click Here!</a></p>
-                <p>Already a member <a href="login.html">Login here</a> </p>
+                <p>Already a member <a href="login.php">Login here</a> </p>
             </div>
             <div class="btn-field">
                 
-                <button type="submit" id="signupBtn" value="home-page.html">Sign up  </button>
+                <button type="submit" id="signupBtn" value="home-page.php">Sign up  </button>
                 
 
             </div>
