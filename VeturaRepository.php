@@ -28,15 +28,15 @@
             echo "<script>alert('U shtua me sukses!')</script>";
         }
 
-        public function getAllVetura(){
-            $conn = $this->connection;
+        // public function getAllVetura(){
+        //     $conn = $this->connection;
 
-            $sql = "SELECT * FROM Vetura";
-            $statement = $conn->query($sql);
+        //     $sql = "SELECT * FROM Vetura";
+        //     $statement = $conn->query($sql);
 
-            $vetura = $statement->fetchAll();
-            return $vetura;
-        }
+        //     $vetura = $statement->fetchAll();
+        //     return $vetura;
+        // }
 
 
         //Pjesa tjeter e funksioneve CRUD: update 
