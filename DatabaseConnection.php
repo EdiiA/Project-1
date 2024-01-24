@@ -2,9 +2,8 @@
 class DatabaseConnection{
     
     private $host = "localhost";
-    private $username = "vetura";
-    // private $password = "12345678";
-    private $db = "grande";
+    private $username = "root";
+    private $db = "register";
 
     function startConnection(){
         try{
@@ -12,10 +11,10 @@ class DatabaseConnection{
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             if(!$conn){
-                echo "Connection failed "; //per testim
+                // echo "Connection failed "; //per testim
                 return null;
             }else{
-                echo "Connection successful!"; //per testim
+                // echo "Connection successful!"; //per testim
                 return $conn;
             }
             

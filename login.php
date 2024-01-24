@@ -22,6 +22,10 @@
 
                     
                     if($user_data['psw'] == $passw){
+                        session_start();
+                        $_SESSION['name'] = $user_data['username'];
+                        $_SESSION['roli'] = $user_data['roli'];
+
                         header("location:home-page.php");
                         die;
 
@@ -70,7 +74,7 @@
                     </div>
 
                     <p>Lost password <a href="#">Click Here!</a></p>
-                    <p>Not a member? <a href="sign-up.php">Sign up</a> </p>
+                    <p>Not a member? <a href="sign-up.php">Sign up</a></p>
                 </div>
 
                 <div class="btn-field">
