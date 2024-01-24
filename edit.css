@@ -38,7 +38,14 @@ header>ul>li{
     margin-top: 0em;
 }
 
-.register-title{
+footer{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+
+.edit-title{
     color: #262626;
     width: 100%;
     display: flex;
@@ -47,7 +54,7 @@ header>ul>li{
     font-size: 3em;
 }
 
-.register-form{
+.edit-form{
     width: 50%;
     height: 90%;
     display: flex;
@@ -105,22 +112,13 @@ input{
     margin-left: 1em;
 }
 
-.register-submit{
+.edit-submit{
     font-size: 1.2em;
-    width: 7em;
+    width: 11em;
     height: 3em;
     border: 0.15em solid white;
     border-radius: 1.5em;
     outline: 0;
-}
-
-footer{
-    margin-top: 5em;
-    background-color: #262626;
-    color: white;
-    width: 100%;
-    height: auto;
-    
 }
 
 .footeri{
@@ -172,6 +170,7 @@ footer{
 @media only screen and (max-width: 768px) {
     body {
         overflow-x: hidden; 
+        background-position: center;
     }
     header {
         height: 10em;
@@ -202,13 +201,13 @@ footer{
         height: 50em;
     }
 
-    .register-form {
+    .edit-form {
         width: 80%;
         display: flex;
         flex-direction: column;
     }
 
-    .register-form div{
+    .edit-form div{
         display: flex;
         flex-direction: column;
         margin-top: 0em;

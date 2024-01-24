@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,6 +33,15 @@
             <p class="bg-logo"><img src="Img/logo-1.png" alt="logo"></p>
             <!-- <p>Emri</p> House Of Cars -->
         </div>
+
+        <?php
+
+            if($_COOKIE['roli']=="admin"){
+                echo"<button>
+                        <a href='AdminDashboard.php'>Dashboard</a>
+                    </button>";
+            }
+        ?>
 
         <!-- Brands -->
         <div class="brands">

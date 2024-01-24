@@ -38,7 +38,7 @@
     </div>
 
     <div class="form-div">
-        <form class="register-form" action="<?php echo $SERVER['PHP_SELF']?>" method="post">
+        <form class="register-form" action="<?php echo $SERVER['PHP_SELF']?>" method="POST">
             <div>
                 <label for="">Emri:</label>  
                 <input class="input-field-1" type="text" name="emri" >

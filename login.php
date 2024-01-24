@@ -19,6 +19,8 @@
                 if($result && mysqli_num_rows($result) > 0){
                     $user_data = mysqli_fetch_assoc($result);
 
+
+                    
                     if($user_data['psw'] == $passw){
                         header("location:home-page.php");
                         die;
