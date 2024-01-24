@@ -41,7 +41,7 @@ $vetura = $strep->getVeturaById($id);
     </div>
 
     <div class="form-div">
-        <form class="edit-form" action="<?php echo $SERVER['PHP_SELF']?>" method="POST">
+        <<form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="post">>
              <!-- nese nuk duam t'i ndryshojme te gjitha te dhenat, e perdorim kete pjesen tek value qe te na shfaqen vlerat aktuale, ashtu qe atributet qe nuk duam t'i ndryshojme mbesin te njejta pa pasur nevoje t'i shkruajme prape-->
             <div>
                 <label for="">Emri:</label>  
@@ -84,7 +84,7 @@ $vetura = $strep->getVeturaById($id);
 <?php 
 
 if(isset($_POST['editBtn'])){
-    $id = $puna['ID'];
+    $id =$id;
     $emri = $_POST['emri']; //merret nga formulari
     $vitiProdhimit = $_POST['$vitiProdhimit'];
     $km = $_POST['km'];
@@ -95,6 +95,7 @@ if(isset($_POST['editBtn'])){
 
     $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi);
     header("location:AdminDashboard.php");
+    exit();
 }
-
+$vetura = $strep->getVeturaById($id);
 ?>
