@@ -21,7 +21,8 @@
         </div>
         <div class="signUp-form">
             <h1 id="title">LOGIN</h1>
-            <form action="home-page.php" onsubmit="return validateForm2()">
+            <!-- ?php echo $_SERVER['PHP_SELF']; ? -->
+            <form action="home-page.php" method="POST" onsubmit="return validateForm2()">
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
