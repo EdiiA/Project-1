@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2024 at 02:17 PM
+-- Generation Time: Jan 25, 2024 at 12:27 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -30,18 +30,19 @@ SET time_zone = "+00:00";
 CREATE TABLE `form` (
   `username` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `psw` varchar(255) NOT NULL
+  `psw` varchar(255) NOT NULL,
+  `roli` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `form`
 --
 
-INSERT INTO `form` (`username`, `email`, `psw`) VALUES
-('ElezKadrijaj', 'ek@ubt-uni.net', 'elielieli'),
-('edisonalushaj', 'ea67877@ubt-uni.net', '12345678'),
-('elezkadrijaj', 'elezkadrijaj18@gmail.com', 'elielieli'),
-('eli', 'eli@gmail.com', '12345678');
+INSERT INTO `form` (`username`, `email`, `psw`, `roli`) VALUES
+('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
+('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
+('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
+('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
