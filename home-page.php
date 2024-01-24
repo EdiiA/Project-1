@@ -35,8 +35,8 @@
         </div>
 
         <?php
-
-            if($_COOKIE['roli']=="admin"){
+            session_start();
+            if($_SESSION['roli']=="admin"){
                 echo"<button>
                         <a href='AdminDashboard.php'>Dashboard</a>
                     </button>";

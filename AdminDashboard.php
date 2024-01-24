@@ -15,23 +15,14 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-<?php
+    <?php
         include('header.php');
         echo $header1;
-        
-
     ?>
 
-    <h1>Dashboards</h1>
-   
-    <nav>
-        <ul>
-            <li><a href="#">Produkte</a></li>
-            <li><a href="#">Porositë</a></li>
-            <li><a href="#">Statistikat</a></li>
-            <!-- Shtoni opsione shtesë sipas nevojave tuaja -->
-        </ul>
-    </nav>
+    <div class="edit-title">
+        <p>DASHBOARD</p>
+    </div>
 
     <table>
         <thead>
@@ -51,16 +42,14 @@
                     <td><?php echo $vetura['VitiProdhimit'];?></td>
                     <td><?php echo $vetura['Km'];?></td>
                     <td><?php echo $vetura['Motori'];?></td>
-                    <td><?php echo $vetura['Hp'];?></td>
+                    <td><?php echo $vetura['HP'];?></td>
                     <td><?php echo $vetura['Cmimi'];?></td>
-                    <td><a href='edit.php?id=<?php echo $student['Id']?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
-                    <td><a href='delete.php?id=<?php echo $student['Id']?>'>Delete</a></td>
+                    <td><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td> <!--e dergojme id ne url permes pjeses ?id= dhe permes kodit ne php e marrim nga studenti i cili eshte i paraqitur ne kete rresht-->
+                    <td><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
                 </tr>
             <?php }?> <!--e mbyllim foreach-->
         </tbody>
     </table>
-
-
 
     <?php
         include('footer.php');

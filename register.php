@@ -52,7 +52,7 @@
                 <input class="input-field" type="text" name="km" >
 
                 <label for="">Motori:</label>
-                <input class="input-field" type="email" name="motori" >
+                <input class="input-field" type="text" name="motori" >
             </div><br>
 
             <div>
