@@ -83,7 +83,7 @@
             </div>
         </div>
         <div class="div-con">
-            <form action="send-email.php" class="forma" method="POST">
+            <form action="" class="forma" method="POST">
                 <h3 id="h3">CONTACT US!</h3>
                 <div class="f-in">
                     <input type="text" placeholder="First Name" name="name">
