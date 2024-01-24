@@ -41,7 +41,7 @@ $vetura = $strep->getVeturaById($id);
     </div>
 
     <div class="form-div">
-        <<form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="post">>
+        <form action="<?php echo $_SERVER['PHP_SELF'] . '?id=' . $id; ?>" method="POST">
              <!-- nese nuk duam t'i ndryshojme te gjitha te dhenat, e perdorim kete pjesen tek value qe te na shfaqen vlerat aktuale, ashtu qe atributet qe nuk duam t'i ndryshojme mbesin te njejta pa pasur nevoje t'i shkruajme prape-->
             <div>
                 <label for="">Emri:</label>  
@@ -67,7 +67,7 @@ $vetura = $strep->getVeturaById($id);
                 <input  class="input-field" type="text" name="cmimi"  value="<?php echo $vetura['Cmimi']?>">
             </div><br>
             
-            <input type="submit" name="editBtn" value="save">
+            <input class="edit-submit" type="submit" name="editBtn" value="save">
 
             <!-- <button name="editBtn"><a href="AdminDashboard.php">Save Changes</a></button> -->
         </form>
@@ -83,19 +83,19 @@ $vetura = $strep->getVeturaById($id);
 
 <?php 
 
-if(isset($_POST['editBtn'])){
-    $id =$id;
-    $emri = $_POST['emri']; //merret nga formulari
-    $vitiProdhimit = $_POST['$vitiProdhimit'];
-    $km = $_POST['km'];
-    $motori = $_POST['motori'];
-    $hp = $_POST['hp'];
-    $cmimi = $_POST['cmimi'];
-    
+    if(isset($_POST['editBtn'])){
+        $id =$id;
+        $emri = $_POST['emri']; //merret nga formulari
+        $vitiProdhimit = $_POST['$vitiProdhimit'];
+        $km = $_POST['km'];
+        $motori = $_POST['motori'];
+        $hp = $_POST['hp'];
+        $cmimi = $_POST['cmimi'];
+        
 
-    $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi);
-    header("location:AdminDashboard.php");
-    exit();
-}
-$vetura = $strep->getVeturaById($id);
+        $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi);
+        header("location:AdminDashboard.php");
+        exit();
+    }
+    $vetura = $strep->getVeturaById($id);
 ?>
