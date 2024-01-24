@@ -1,3 +1,27 @@
+<?php
+    session_start();
+
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+
+        $user_name = $_POST['username'];
+        $email = $_POST['email'];
+        $passw = $_POST['psw'];
+
+        if(!empty($email) && !empty($passw) && !is_numeric($email)){
+            $query = "insert into form (username, email, psw) values('$user_name', '$email', '$passw')";
+
+            mysqli_query($con, $query);
+            echo "<script type='text/javascript'> alert('Successfully Register')</script>";
+        }
+        else{
+            echo "<script type='text/javascript'> alert('Please Enter some Valid Information')</script>";
+        }
+
+    }
+?>
+
 <html>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,26 +43,28 @@
     </div>
     <div class="signUp-form">
         <h1 id="title">Sign UP</h1>
-        <form action="home-page.php" onsubmit="return validateForm()" >
+        <form  onsubmit="return validateForm()" method="POST">
             <div class="input-group">
                 <div class="input-field" id="nameField">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" id="username" placeholder="Username">
-                </div>
+                    <input type="text" id="username" placeholder="Username" name = "username">
+                </div> 
                 <div class="input-field">
                     <i class="fa-solid fa-envelope"></i>
-                    <input type="email" id="email" placeholder="Email" >
+                    <input type="email" id="email" placeholder="Email" name="email">
                 </div>
                 <div class="input-field">
                     <i class="fa-solid fa-lock"></i>
-                    <input type="password" id="password" placeholder="Password">
+                    <input type="password" id="password" placeholder="Password" name="psw">
                 </div>
                 <p>Lost password <a href="#">Click Here!</a></p>
                 <p>Already a member <a href="login.php">Login here</a> </p>
             </div>
             <div class="btn-field">
                 
-                <button type="submit" id="signupBtn" value="home-page.php">Sign up  </button>
+                
+
+                <input type="submit" id="signupBtn" value="Send Data" placeholder="Sign Up">
                 
 
             </div>

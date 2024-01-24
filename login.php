@@ -1,5 +1,39 @@
-<?php include('user.php');?>
-<?php include('validation.php');?>
+<!-- <?php include('user.php');?>
+<?php include('validation.php');?> -->
+
+<?php
+    session_start();
+
+    include("db.php");
+
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        $user_name = $_POST['username'];
+        $passw = $_POST['psw'];
+
+        if(!empty($user_name) && !empty($passw) && !is_numeric($user_name)){
+            $query= "Select * From form where username = '$user_name' limit 1";
+            $result = mysqli_query($con, $query);
+
+            if($result){
+
+                if($result && mysqli_num_rows($result) > 0){
+                    $user_data = mysqli_fetch_assoc($result);
+
+                    if($user_data['psw'] == $passw){
+                        header("location:home-page.php");
+                        die;
+
+                    }
+                }
+            }
+            echo "<script type='text/javascript'> alert('Wrong username or password')</script>";
+        }
+        else{
+            echo "<script type='text/javascript'> alert('Wrong username or password')</script>";
+        }
+
+    }
+?>    
 
 <html>
     <head>
@@ -21,11 +55,11 @@
         </div>
         <div class="signUp-form">
             <h1 id="title">LOGIN</h1>
-            <form action="home-page.php" onsubmit="return validateForm2()">
+            <form  onsubmit="return validateForm2()" method="POST">
                 <div class="input-group">
                     <div class="input-field" id="nameField">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" id="username2" name="name" placeholder="Username">
+                        <input type="text" id="username2" name="username" placeholder="username">
                     </div>
                     
                     <div class="input-field">
