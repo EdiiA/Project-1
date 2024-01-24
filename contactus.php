@@ -1,3 +1,22 @@
+<?php
+    if(!empty($_POST["input"])){
+        $name =$_POST["name"];
+        $surname =$_POST["surname"];
+        $email =$_POST["email"];
+        $messa =$_POST["messa"];
+        $toEmail ="elezkadrijaj18@gmail.com";
+
+
+        $mailHeaders = "Name:" . $name .
+        "\r\n Surname :" . $surname .
+        "\r\n Email : "  . $email .
+        "\r\n Message :" . $messa . "\r\n";
+
+        if(mail($toEmail, $name , $mailHeaders)){
+            $message = "Your Information is Received Successfully.";
+        }
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,16 +83,38 @@
             </div>
         </div>
         <div class="div-con">
-            <form action="" class="forma">
+            <form action="send-email.php" class="forma" method="POST">
                 <h3 id="h3">CONTACT US!</h3>
                 <div class="f-in">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="First Name" name="name">
+                    <input type="text" placeholder="Last Name"  name="surname">
                 </div>
-                <input type="email" placeholder="Enter Your Email" id="email">
-                <textarea name="" id="textarea" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
-                <button>Contact Our Agents Now</button>
+                <input type="email" placeholder="Enter Your Email" id="email" name="email">
+                <textarea name="messa" id="textarea" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="Contact Us" name="input">
+                <?php if(!empty($message)){ ?>
+                    <div>
+                        <strong><?php echo $message ?></strong>
+                    </div>
+                <?php } ?>
             </form>
+
+            <?php
+                if(isset($_POST['input'])){
+                      include_once 'function.php';
+
+                      $obj= new Contact();
+                      $res = $obj->contact_us($_POST);
+
+                      if($res == true){
+                        echo "<script>alert('Query successfully Submitted .Thank You')</script>";
+                      }
+                      else{
+                        echo "<script>alert('Something Went wrong!!')</script>";
+                      }
+                }
+
+            ?>
         </div>
         
     </main>
