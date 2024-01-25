@@ -1,3 +1,10 @@
+<?php
+    include "DatabaseConnection.php";
+    include_once "VeturaRepository.php";
+    
+    $vtrep = new VeturaRepository();
+    $vetura = $vtrep->getAllVetura();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -152,6 +159,40 @@
                     <p>0 KM</p>
                 </div>
             </div>
+
+            <?php foreach ($vetura as $car) { ?>
+                <div class="car">
+                    <p class="car-img"><img src="Img/<?php echo $car['Foto'];?>" alt="Car Img"></p>
+                    <div class="car-title">
+                        <p class="logo-foto"><?php echo $car['Motori'].' '; echo $car['HP'].'hp';?></p>
+                        <p><?php echo $car['Emri'];?></p>
+                    </div>
+                    <hr id="hr2">
+                    <div class="car-text">
+                        <p><?php echo $car['VitiProdhimit'];?></p>
+                        <p><?php echo $car['Cmimi']; echo ' $';?></p>
+                        <p><?php echo $car['Km']; echo ' Km';?></p>
+                    </div>
+                </div>
+
+                <!-- <div class="puna">
+                    <img src="<?php //echo $job['Img']; ?>" alt="" style="width: 70px; height: auto;">
+                    <h3 class="job-title"><?php //echo $job['JobTitle']; ?></h3>
+                    <div class="kryesor">
+                        <div class="foto-fulltime">
+                            <img src="ora.png" alt="" style="width: 20px; height: auto;">
+                            <div class="time"><?php //echo $job['Orari']; ?></div>
+                        </div>
+                        <div class="foto-lokacion">
+                            <img src="lokacioni.png" alt="" style="width: 20px; height: auto;">
+                            <div class="lokacion"><?php //echo $job['Lokacioni']; ?></div>
+                        </div>
+                    </div>
+                    <div class="details"><?php //echo $job['Detajet']; ?></div>
+                    <a href="#" class="details-btn" onclick="showJobDetails7()">Learn More</a>
+                    <span class="open-positions"><?php //echo $job['PozitaTeHapura']; ?> open positions</span>
+                </div> -->
+            <?php } ?>
         </div>
     </main>
 
