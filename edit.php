@@ -86,7 +86,7 @@ $vetura = $strep->getVeturaById($id);
     if(isset($_POST['editBtn'])){
         $id =$id;
         $emri = $_POST['emri']; //merret nga formulari
-        $vitiProdhimit = $_POST['$vitiProdhimit'];
+        $vitiProdhimit = $_POST['vitiProdhimit'];
         $km = $_POST['km'];
         $motori = $_POST['motori'];
         $hp = $_POST['hp'];

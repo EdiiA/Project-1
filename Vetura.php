@@ -5,15 +5,15 @@
         private $VitiProdhimit;
         private $Km;
         private $Motori;
-        private $Hp;
+        private $HP;
         private $Cmimi;
 
-        public function __construct($Emri, $VitiProdhimit, $Km, $Motori, $Hp, $Cmimi){
+        public function __construct($Emri, $VitiProdhimit, $Km, $Motori, $HP, $Cmimi){
             $this->Emri=$Emri;
             $this->VitiProdhimit=$VitiProdhimit;
             $this->Km=$Km;
             $this->Motori=$Motori;
-            $this->Hp=$Hp;
+            $this->HP=$HP;
             $this->Cmimi=$Cmimi;
         }
 
@@ -46,10 +46,10 @@
         }
 
         public function getHp(){
-            return $this->Hp;
+            return $this->HP;
         }
-        public function setHp($Hp){
-            $this->Hp = $Hp;
+        public function setHp($HP){
+            $this->HP = $HP;
         }
 
         public function getCmimi(){

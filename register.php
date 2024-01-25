@@ -15,6 +15,7 @@
         $veturaRepository = new VeturaRepository();
         $veturaRepository->insertVetura($vetura);
         header("location:AdminDashboard.php");
+        exit();
     }
 ?>
 
@@ -38,7 +39,7 @@
     </div>
 
     <div class="form-div">
-        <form class="register-form" action="<?php echo $SERVER['PHP_SELF']?>" method="POST">
+        <form class="register-form" action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
             <div>
                 <label for="">Emri:</label>  
                 <input class="input-field-1" type="text" name="emri" >
@@ -63,7 +64,9 @@
                 <input class="input-field" type="text" name="cmimi" >
             </div><br>
             
-            <input class="register-submit" type="submit" name="submitbtn" value="Submit" href="AdminDashboard.php">
+        <input  type="submit" class="register-submit" name="submitbtn" value="Submit" >
+
+
         </form>
     </div>
 

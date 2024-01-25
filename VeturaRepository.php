@@ -20,7 +20,7 @@
             $hp=$vetura->getHp();
             $cmimi = $vetura->getCmimi();
 
-            $sql = "INSERT INTO Vetura(Emri, VitiProdhimit, Km, Motori, HP, Cmimi) VALUES (?,?,?,?,?,?)";
+            $sql = "INSERT INTO vetura(Emri, VitiProdhimit, Km, Motori, HP, Cmimi) VALUES (?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$emri, $vitiProdhimit, $km, $motori,$hp, $cmimi]);
@@ -31,7 +31,7 @@
         public function getAllVetura(){
             $conn = $this->connection;
 
-            $sql = "SELECT * FROM Vetura";
+            $sql = "SELECT * FROM vetura";
             $statement = $conn->query($sql);
 
             $vetura = $statement->fetchAll();
@@ -43,7 +43,7 @@
         //dergohet parametri ne baze te cilit e identifikojme studentin (ne kete rast id, por mund te jete edhe ndonje atribut tjeter) dhe parametrat e tjere qe mund t'i ndryshojme (emri, mbiemri, etj...)
         public function editVetura($id, $emri, $vitiProdhimit, $km, $motori,$hp, $cmimi){
             $conn = $this->connection;
-            $sql = "UPDATE Vetura SET Emri=?,VitiProdhimit=?, Km=?, Motori=?, HP=?, Cmimi=? WHERE ID=?";
+            $sql = "UPDATE vetura SET Emri=?,VitiProdhimit=?, Km=?, Motori=?, HP=?, Cmimi=? WHERE ID=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$emri, $vitiProdhimit, $km, $motori,$hp, $cmimi, $id]);
@@ -57,7 +57,7 @@
         function deleteVetura($id){
             $conn = $this->connection;
 
-            $sql = "DELETE FROM Vetura WHERE ID=?";
+            $sql = "DELETE FROM vetura WHERE ID=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$id]);
@@ -68,7 +68,7 @@
         function getVeturaById($id){
             $conn = $this->connection;
 
-            $sql = "SELECT * FROM Vetura WHERE ID=?";
+            $sql = "SELECT * FROM vetura WHERE ID=?";
 
             $statement = $conn->prepare($sql);
             $statement->execute([$id]);
