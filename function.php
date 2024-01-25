@@ -20,5 +20,17 @@
 
             
         }
+        public function getAllComments()
+      {
+          $conn = $this->mysqli;
+  
+          $sql = "SELECT * FROM contact_us";
+          $stmt = $conn->prepare($sql);
+          $stmt->execute();
+          $messages = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
+          $stmt->close();
+  
+          return $messages;
+      }
     }
 ?>

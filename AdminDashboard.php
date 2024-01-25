@@ -1,9 +1,15 @@
 <?php
     include('DatabaseConnection.php');
     include_once "VeturaRepository.php";
+    include('function.php');
     
     $strep = new VeturaRepository();
     $veturat = $strep->getAllVetura();
+
+
+    $mess = new Contact();
+    $messagee = $mess->getAllComments();
+
 ?>
 
 <!DOCTYPE html>
@@ -57,8 +63,35 @@
                 <?php } ?>
             </tbody>
         </table>
-    </div>
 
+        
+    </div>
+    <h1>Contact Us Messages</h1>
+    <div class="contact-table">
+        <table>
+            <thead>
+            <tr>
+            <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Message</th>
+           
+            </tr>
+            </thead>
+            <tbody>
+                <?php foreach($messagee as $msg) { ?> <!--e hapim foreach-->
+                    <tr>
+                    <td><?php echo $msg['first_name'];?></td>
+                        <td><?php echo $msg['last_name'];?></td>
+                        <td><?php echo $msg['email'];?></td>
+                        <td><?php echo $msg['mess'];?></td>
+                     
+                       
+                    </tr>
+                <?php }?> 
+            </tbody>
+        </table>
+    </div>                
     <?php
         include('footer.php');
         echo $footer1;

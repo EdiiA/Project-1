@@ -124,7 +124,7 @@
     
         echo $footer1;
     ?>
-
+    
     <!-- <footer>
         <div class="footeri">
             <div class="f-p1">
