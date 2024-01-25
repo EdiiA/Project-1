@@ -9,8 +9,9 @@
         $motori = $_POST['motori'];
         $hp = $_POST['hp'];
         $cmimi = $_POST['cmimi'];
+        $foto = $_POST['foto'];
     
-        $vetura = new Vetura($emri, $vitiProdhimit,$km,$motori,$hp,$cmimi);
+        $vetura = new Vetura($emri,$vitiProdhimit,$km,$motori,$hp,$cmimi,$foto);
     
         $veturaRepository = new VeturaRepository();
         $veturaRepository->insertVetura($vetura);
@@ -63,6 +64,11 @@
                 <label for="">Cmimi:</label>
                 <input class="input-field" type="text" name="cmimi" >
             </div><br>
+
+            <div>
+                <label for="">Foto:</label>
+                <input  class="input-field" type="file" name="foto">
+            </div>
             
         <input  type="submit" class="register-submit" name="submitbtn" value="Submit" >
 

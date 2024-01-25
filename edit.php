@@ -66,6 +66,11 @@ $vetura = $strep->getVeturaById($id);
                 <label for="">Cmimi:</label>
                 <input  class="input-field" type="text" name="cmimi"  value="<?php echo $vetura['Cmimi']?>">
             </div><br>
+
+            <div>
+                <label for="">Foto:</label>
+                <input  class="input-field" type="file" name="foto"  value="<?php echo $vetura['Foto']?>">
+            </div>
             
             <input class="edit-submit" type="submit" name="editBtn" value="save">
 
@@ -91,9 +96,10 @@ $vetura = $strep->getVeturaById($id);
         $motori = $_POST['motori'];
         $hp = $_POST['hp'];
         $cmimi = $_POST['cmimi'];
+        $foto = $_POST['foto'];
         
 
-        $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi);
+        $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi, $foto);
         header("location:AdminDashboard.php");
         exit();
     }

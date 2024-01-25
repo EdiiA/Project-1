@@ -7,14 +7,16 @@
         private $Motori;
         private $HP;
         private $Cmimi;
+        private $foto;
 
-        public function __construct($Emri, $VitiProdhimit, $Km, $Motori, $HP, $Cmimi){
+        public function __construct($Emri, $VitiProdhimit, $Km, $Motori, $HP, $Cmimi, $foto){
             $this->Emri=$Emri;
             $this->VitiProdhimit=$VitiProdhimit;
             $this->Km=$Km;
             $this->Motori=$Motori;
             $this->HP=$HP;
             $this->Cmimi=$Cmimi;
+            $this->foto=$foto;
         }
 
         public function getEmri(){
@@ -57,6 +59,13 @@
         }
         public function setCmimi($Cmimi){
             $this->Cmimi = $Cmimi;
+        }
+
+        public function getFoto(){
+            return $this->foto;
+        }
+        public function setfoto($foto){
+            $this->foto = $foto;
         }
 
         public function __toString(){
