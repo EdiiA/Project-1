@@ -36,12 +36,20 @@
 
         <?php
             session_start();
-            if($_SESSION['roli']=="admin"){
+            if (isset($_SESSION['roli'])) {
+                if($_SESSION['roli']=="admin"){
+                    echo"<button>
+                            <a href='AdminDashboard.php'>Dashboard</a>
+                        </button>";
+                }
+
                 echo"<button>
-                        <a href='AdminDashboard.php'>Dashboard</a>
+                        <a href='logout.php'>Log Out</a>
                     </button>";
             }
         ?>
+
+        
 
         <!-- Brands -->
         <div class="brands">
