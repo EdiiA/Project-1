@@ -19,12 +19,16 @@
         include('header.php');
         echo $header1;
     ?>
-    <a href="register.php">Register</a>
+    
     <div class="dashboard-title">
         <p>DASHBOARD</p>
     </div>
 
-    <div>
+    <div class="register-link">
+        <a href="register.php" style="color: #f5f5f5;">Register</a>
+    </div>
+
+    <div class="dashboard-table">
         <table class="table">
             <thead>
                 <tr>
@@ -34,6 +38,7 @@
                     <th>Motori</th>
                     <th>Hp</th>
                     <th>Cmimi</th>
+                    <th>Foto</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,8 +50,9 @@
                         <td><?php echo $vetura['Motori'];?></td>
                         <td><?php echo $vetura['HP'];?></td> <!-- Changed 'HP' to 'Hp' assuming this is the correct case in your database -->
                         <td><?php echo $vetura['Cmimi'];?></td>
-                        <td><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
-                        <td><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
+                        <td><?php echo $vetura['Foto'];?></td>
+                        <td class="edit-del"><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
+                        <td class="edit-del"><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
                     </tr>
                 <?php } ?>
             </tbody>
