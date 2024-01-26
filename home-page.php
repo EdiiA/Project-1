@@ -31,25 +31,42 @@
         <!-- Cover Image -->
         <div class="bgfoto">
             <p class="bg-logo"><img src="Img/logo-1.png" alt="logo"></p>
-            <!-- <p>Emri</p> House Of Cars -->
+            <!-- <p>Emri</p> House Of Cars -->            
         </div>
 
-        <?php
-            session_start();
-            if (isset($_SESSION['roli'])) {
-                if($_SESSION['roli']=="admin"){
-                    echo"<button>
-                            <a href='AdminDashboard.php'>Dashboard</a>
-                        </button>";
+            <?php
+                session_start();
+                if (isset($_SESSION['roli'])) {
+                    if($_SESSION['roli']=="admin"){
+                        echo"
+                            <div class='bg-buttons'>
+                                <button class='btn-dashboard'>
+                                    <a href='AdminDashboard.php'>Dashboard</a>
+                                </button>
+                            
+                                <button class='btn-logout'>
+                                    <a href='logout.php'>Log Out</a>
+                                </button>
+                            </div> ";
+                    }
+                } else{
+                    
+                    echo "
+                        <div class='login-txt'>
+                            <p>JOIN OUR COMMUNITY</p>
+                        </div>";
+                    echo"
+                        <div class='bg-buttons-2'>
+                            <button class='btn-login'>
+                                <a href='login.php'>Log in</a>
+                            </button>
+                            
+                            <button class='btn-signup'>
+                                <a href='sign-up.php'>Sign up</a>
+                            </button>
+                        </div>";
                 }
-
-                echo"<button>
-                        <a href='logout.php'>Log Out</a>
-                    </button>";
-            }
-        ?>
-
-        
+            ?> 
 
         <!-- Brands -->
         <div class="brands">

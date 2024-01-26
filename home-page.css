@@ -61,6 +61,75 @@ header>ul>li{
     height: 100%;
 }
 
+.bg-buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.btn-dashboard{
+    width: 8em;
+    height: 3em;
+    font-size: 1.3em;
+    background-color: #262626;
+    border: 0.2em solid #262626;
+    border-radius: 1.4em;
+}
+
+.btn-dashboard a, .btn-logout a, .btn-login a, .btn-signup a{
+    color: white;
+    text-decoration: none;
+}
+
+.btn-logout{
+    width: 6em;
+    height: 2em;
+    font-size: 1em;
+    background-color: #262626;
+    border: 0.2em solid #262626;
+    border-radius: 1.4em;
+    margin-top: 1em;
+}
+
+.bg-buttons-2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-login{
+    width: 8em;
+    height: 3em;
+    font-size: 1.3em;
+    background-color: #262626;
+    border: 0.2em solid #262626;
+    border-radius: 1.4em;
+    margin-right: 0.5em;
+}
+
+.btn-signup{
+    width: 8em;
+    height: 3em;
+    font-size: 1.3em;
+    background-color: #262626;
+    border: 0.2em solid #262626;
+    border-radius: 1.4em;
+    margin-left: 0.5em;
+}
+
+.login-txt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    font-size: 1.8em;
+}
+
 /* .bgfoto p+p{
     margin-top: 7.5em;
     font-size: 3em;
