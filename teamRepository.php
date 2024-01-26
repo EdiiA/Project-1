@@ -37,13 +37,13 @@
             $team = $statement->fetchAll();
             return $team;
         }
-        public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $image){
+        public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi){
             $conn = $this->connection;
-            $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=? image=? WHERE ID=?";
+            $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=?  WHERE ID=?";
 
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi,$image, $id]);
+            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi, $id]);
             echo "<script>alert('U ndryshua me sukses!')</script>";
 
         }
