@@ -45,6 +45,15 @@ header>ul>li{
     font-size: 3em;
 }
 
+.titlee{
+    color: #262626;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
 .register-link{
     border: 1px solid #262626;
     background-color: #262626;

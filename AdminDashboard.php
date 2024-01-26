@@ -35,6 +35,10 @@
         <p>Dashboard</p>
     </div>
 
+    <div class="titlee">
+        <p>Cars</p>
+    </div>
+
     <div class="register-link">
         <a href="register.php" style="color: #f5f5f5;">Register</a>
     </div>
@@ -72,7 +76,9 @@
         </div>
     </div>
 
-    <h1>Contact Us Messages</h1>
+    <div class="titlee">
+        <p>Contact Table</p>
+    </div>
 
     <div class="contact-table">
 
@@ -102,7 +108,9 @@
         </table>
     </div> 
     
-    <h1>Team</h1>
+    <div class="titlee">
+        <p>Team Table</p>
+    </div>
     
     <div class="contact-table">
         <table  class="table">
