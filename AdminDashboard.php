@@ -38,45 +38,50 @@
     <div class="register-link">
         <a href="register.php" style="color: #f5f5f5;">Register</a>
     </div>
+ 
+    <div class="dash-resp">
+        <div class="dashboard-table">
+            <table class="dash-table">
+                <thead>
+                    <tr>
+                        <th>Emri</th>
+                        <th>Viti Prodhimit</th>
+                        <th>Km</th>
+                        <th>Motori</th>
+                        <th>Hp</th>
+                        <th>Cmimi</th>
+                        <th>Foto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($veturat as $vetura) { ?>
+                        <tr>
+                            <td><?php echo $vetura['Emri'];?></td>
+                            <td><?php echo $vetura['VitiProdhimit'];?></td>
+                            <td><?php echo $vetura['Km'];?></td>
+                            <td><?php echo $vetura['Motori'];?></td>
+                            <td><?php echo $vetura['HP'];?></td> <!-- Changed 'HP' to 'Hp' assuming this is the correct case in your database -->
+                            <td><?php echo $vetura['Cmimi'];?></td>
+                            <td><?php echo $vetura['Foto'];?></td>
+                            <td class="edit-del"><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
+                            <td class="edit-del"><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
+                        </tr>
+                    <?php } ?>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <div class="dashboard-table">
+    <h1>Contact Us Messages</h1>
+
+    <div class="contact-table">
+
+        <!-- <p id="contact-msg">Contact Us Messages</p> -->
+        
         <table class="table">
             <thead>
-                <tr>
-                    <th>Emri</th>
-                    <th>Viti Prodhimit</th>
-                    <th>Km</th>
-                    <th>Motori</th>
-                    <th>Hp</th>
-                    <th>Cmimi</th>
-                    <th>Foto</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php foreach($veturat as $vetura) { ?>
-                    <tr>
-                        <td><?php echo $vetura['Emri'];?></td>
-                        <td><?php echo $vetura['VitiProdhimit'];?></td>
-                        <td><?php echo $vetura['Km'];?></td>
-                        <td><?php echo $vetura['Motori'];?></td>
-                        <td><?php echo $vetura['HP'];?></td> <!-- Changed 'HP' to 'Hp' assuming this is the correct case in your database -->
-                        <td><?php echo $vetura['Cmimi'];?></td>
-                        <td><?php echo $vetura['Foto'];?></td>
-                        <td class="edit-del"><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
-                        <td class="edit-del"><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
-                    </tr>
-                <?php } ?>
-            </tbody>
-        </table>
-
-        
-    </div>
-    <h1>Contact Us Messages</h1>
-    <div class="contact-table">
-        <table>
-            <thead>
             <tr>
-            <th>First Name</th>
+                <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Messages</th>
@@ -86,20 +91,21 @@
             <tbody>
                 <?php foreach($messagee as $msg) { ?> <!--e hapim foreach-->
                     <tr>
-                    <td><?php echo $msg['first_name'];?></td>
+                        <td><?php echo $msg['first_name'];?></td>
                         <td><?php echo $msg['last_name'];?></td>
                         <td><?php echo $msg['email'];?></td>
                         <td><?php echo $msg['mess'];?></td>
-                     
-                       
+                        <!-- <td class="edit-del"><a href='delete-team.php?id=<?php //echo $msg['first_name'];?>'>Delete</a></td> -->
                     </tr>
                 <?php }?> 
             </tbody>
         </table>
     </div> 
+    
     <h1>Team</h1>
+    
     <div class="contact-table">
-        <table>
+        <table  class="table">
             <thead>
             <tr>
             <th>First Name</th>
