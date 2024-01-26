@@ -2,6 +2,7 @@
     include('DatabaseConnection.php');
     include_once "VeturaRepository.php";
     include('function.php');
+    include_once "teamRepository.php";
     
     $strep = new VeturaRepository();
     $veturat = $strep->getAllVetura();
@@ -9,6 +10,10 @@
 
     $mess = new Contact();
     $messagee = $mess->getAllComments();
+
+    $te = new TeamRepository();
+    $team = $te->getAllTeam();
+
 
 ?>
 
@@ -74,7 +79,7 @@
             <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
-                <th>Message</th>
+                <th>Messages</th>
            
             </tr>
             </thead>
@@ -91,7 +96,34 @@
                 <?php }?> 
             </tbody>
         </table>
-    </div>                
+    </div> 
+    <h1>Team</h1>
+    <div class="contact-table">
+        <table>
+            <thead>
+            <tr>
+            <th>First Name</th>
+                <th>Last Name</th>
+                <th>Pozita</th>
+                <th>Pershkrimi</th>
+           
+            </tr>
+            </thead>
+            <tbody>
+                <?php foreach($team as $teams) { ?> <!--e hapim foreach-->
+                    <tr>
+                    <td><?php echo $teams['firstname'];?></td>
+                        <td><?php echo $teams['lastname'];?></td>
+                        <td><?php echo $teams['pozita'];?></td>
+                        <td><?php echo $teams['pershkrimi'];?></td>
+                        <!-- <td><?php echo $teams['image'];?></td> -->
+                        <td class="edit-del"><a href='edit-team.php?id=<?php echo $teams['ID'];?>'>Edit</a></td>
+                        <td class="edit-del"><a href='delete-team.php?id=<?php echo $teams['ID'];?>'>Delete</a></td>
+                    </tr>
+                <?php }?> 
+            </tbody>
+        </table>
+    </div>                    
     <?php
         include('footer.php');
         echo $footer1;

@@ -1,3 +1,10 @@
+<?php
+    include "DatabaseConnection.php";
+    include_once "teamRepository.php";
+    
+    $te = new TeamRepository();
+    $team = $te->getAllTeam();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
