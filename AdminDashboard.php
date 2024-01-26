@@ -32,7 +32,7 @@
     ?>
     
     <div class="dashboard-title">
-        <p>DASHBOARD</p>
+        <p>Dashboard</p>
     </div>
 
     <div class="register-link">
