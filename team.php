@@ -33,38 +33,23 @@
         </div>
 
         <div class="team">
-            <div class="profile">
-                <div class="team-img"></div>
+            <?php foreach ($team as $teams) { ?>
+                <div class="profile">
+                    <div ><img src="Img/<?php echo $teams['img'];?>" class="team-img" alt=""></div>
 
-                <div class="team-txt">
-                    <p id="team-title">Filan Fisteku</p>
-
-                    <p id="team-text">Exercitation ut ipsum nulla laborum consectetur nisi cillum. Aute ipsum ex ipsum consequat. Magna velit Lorem ad laboris nisi non laborum.</p>
+                    <div class="team-txt">
+                        <p id="team-title"><?php echo $teams['firstname'];?></p>
+                        <p id="team-title"><?php echo $teams['lastname'];?></p>
+                        <p id="team-text"><?php echo $teams['pozita'];?></p>
+                        <p id="team-text"><?php echo $teams['pershkrimi'];?></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="profile">
-                <div class="team-img"></div>
-
-                <div class="team-txt">
-                    <p id="team-title">Filan Fisteku</p>
-
-                    <p id="team-text">Exercitation ut ipsum nulla laborum consectetur nisi cillum. Aute ipsum ex ipsum consequat. Magna velit Lorem ad laboris nisi non laborum.</p>
-                </div>
-            </div>
-
-            <div class="profile">
-                <div class="team-img"></div>
-
-                <div class="team-txt">
-                    <p id="team-title">Filan Fisteku</p>
-
-                    <p id="team-text">Exercitation ut ipsum nulla laborum consectetur nisi cillum. Aute ipsum ex ipsum consequat. Magna velit Lorem ad laboris nisi non laborum.</p>
-                </div>
-            </div>
+                <?php } ?>
+            
         </div>
-    </main>
+       
 
+    </main>
     <?php
         include('footer.php');
     
