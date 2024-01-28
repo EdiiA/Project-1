@@ -58,10 +58,10 @@ $team = $strep->getTeamById($id);
                 <label for="">Pershkrimi:</label>
                 <input class="input-field" type="text" name="pershkrimi" value="<?php echo $team['pershkrimi']?>">
             </div><br>
-            <!-- <div>
+            <div>
                 <label for="">Foto:</label>
-                <input  class="input-field" type="file" name="image"  value="<?php echo $team['image']?>">
-            </div> -->
+                <input  class="input-field" type="file" name="image"  value="<?php echo $team['img']?>">
+            </div>
 
         
             
