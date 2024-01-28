@@ -46,6 +46,7 @@ header>ul>li{
 }
 
 .titlee{
+    margin-top: 2em;
     color: #262626;
     width: 100%;
     display: flex;
@@ -66,7 +67,19 @@ header>ul>li{
     border-radius: 0.5em;
     margin-left: 5em;
 }
-
+.register-linkT{
+    border: 1px solid #262626;
+    background-color: #262626;
+    width: 5em;
+    height: 2em;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    margin-left: 5em;
+    margin-top:2em;
+}
 /* .register-link:hover {
 
 } */
