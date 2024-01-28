@@ -107,11 +107,13 @@
             </tbody>
         </table>
     </div> 
-    
+   
     <div class="titlee">
         <p>Team Table</p>
     </div>
-    
+    <div class="register-linkT">
+        <a href="register-team.php" style="color: #f5f5f5;">Register</a>
+    </div>
     <div class="contact-table">
         <table  class="table">
             <thead>
@@ -120,6 +122,7 @@
                 <th>Last Name</th>
                 <th>Pozita</th>
                 <th>Pershkrimi</th>
+                <th>Image</th>
            
             </tr>
             </thead>
@@ -130,7 +133,7 @@
                         <td><?php echo $teams['lastname'];?></td>
                         <td><?php echo $teams['pozita'];?></td>
                         <td><?php echo $teams['pershkrimi'];?></td>
-                        <!-- <td><?php echo $teams['image'];?></td> -->
+                        <td><?php echo $teams['img'];?></td>
                         <td class="edit-del"><a href='edit-team.php?id=<?php echo $teams['ID'];?>'>Edit</a></td>
                         <td class="edit-del"><a href='delete-team.php?id=<?php echo $teams['ID'];?>'>Delete</a></td>
                     </tr>
