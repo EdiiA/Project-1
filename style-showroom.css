@@ -112,13 +112,18 @@ header>ul>li{
 
 .collection{
     display: flex;
-    flex-direction: row;
+    flex-direction:row-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    
 }
 
 .car{
+    width:30em;
+    height: 25em;
+    display: flex;
+    flex-direction: row-reverse;
     border: 1px solid  #c2c2c2;
     margin: 10px;
     background-color:  #e2e2e2;

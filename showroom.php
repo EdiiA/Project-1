@@ -42,8 +42,8 @@
             <p class="brands-title"><b>OUR CAR BRANDS</b></p>
         </div>
 
-        <div class="collection">
-            <div class="car">
+         <div class="collection">
+            <!--<div class="car">
                 <p class="car-img"><img src="Img/LL.png" alt=""></p>
                 <div class="car-title">
                     <p class="logo-foto"><img src="Img/1939.png" alt=""></p>
@@ -158,7 +158,7 @@
                     <p>2023</p>
                     <p>0 KM</p>
                 </div>
-            </div>
+            </div> -->
 
             <?php foreach ($vetura as $car) { ?>
                 <div class="car">
