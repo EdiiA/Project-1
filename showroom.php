@@ -39,7 +39,7 @@
                 <img src="Img/volkswagen-logo.png" alt="Wolkswagen" class="logo">
             </div>
 
-            <p class="brands-title"><b>OUR CAR BRANDS</b></p>
+            <p class="brands-title"><b>OUR CAR</b></p>
         </div>
 
          <div class="collection">
