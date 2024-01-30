@@ -43,6 +43,7 @@
         </div>
 
         <div class="collection">
+            <div></div>
             <!--<div class="car">
                 <p class="car-img"><img src="Img/LL.png" alt=""></p>
                 <div class="car-title">
