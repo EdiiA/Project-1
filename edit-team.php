@@ -60,7 +60,11 @@ $team = $strep->getTeamById($id);
             </div><br>
             <div>
                 <label for="">Foto:</label>
+<<<<<<< Updated upstream
                 <input  class="input-field" type="file" name="image"  value="<?php echo $team['img']?>">
+=======
+                <input  class="input-field" type="file" name="img"  value="<?php echo $team['image']?>">
+>>>>>>> Stashed changes
             </div>
 
         
@@ -87,11 +91,11 @@ $team = $strep->getTeamById($id);
         $lastName = $_POST['lastName'];
         $pozita = $_POST['pozita'];
         $pershkrimi = $_POST['pershkrimi'];
-        $image = $_POST['image'];
+        $img = $_POST['image'];
        
         
 
-        $strep->editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $image);
+        $strep->editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $img);
         header("location:AdminDashboard.php");
         exit();
     }

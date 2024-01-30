@@ -3,6 +3,7 @@
     include_once 'teamRepository.php';
 
     if (isset($_POST['submitbtn'])) {
+<<<<<<< Updated upstream
 
         $firstName = $_POST['firstname']; //merret nga formulari
         $lastName = $_POST['lastname'];
@@ -14,6 +15,19 @@
     
         $teamr = new TeamRepository();
         $teamr->insertTeam($team);
+=======
+        
+        $firstName = $_POST['firstName']; //merret nga formulari
+        $lastName = $_POST['lastName'];
+        $pozita = $_POST['pozita'];
+        $pershkrimi = $_POST['pershkrimi'];
+        $image = $_POST['foto'];
+    
+        $team = new Team_connect($firstName,$lastName,$pozita,$pershkrimi, $image);
+    
+        $teamregister= new TeamRepository();
+        $teamregister->insertTeam($team);
+>>>>>>> Stashed changes
         header("location:AdminDashboard.php");
         exit();
     }
@@ -35,17 +49,28 @@
     ?>
 
     <div class="register-title">
+<<<<<<< Updated upstream
         <p>Register</p>
+=======
+        <p>Register Team</p>
+>>>>>>> Stashed changes
     </div>
 
     <div class="form-div">
         <form class="register-form" action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
             <div>
                 <label for="">First Name:</label>  
+<<<<<<< Updated upstream
                 <input class="input-field-1" type="text" name="firstname"" >
 
                 <label for="">Last Name:</label>
                 <input class="input-field-2" type="text" name="lastname" >
+=======
+                <input class="input-field-1" type="text" name="firstName" >
+
+                <label for="">Last Name:</label>
+                <input class="input-field-2" type="text" name="lastName" >
+>>>>>>> Stashed changes
             </div><br>
 
             <div>

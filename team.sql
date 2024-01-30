@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 26, 2024 at 11:27 AM
+-- Generation Time: Jan 30, 2024 at 06:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -32,15 +32,18 @@ CREATE TABLE `team` (
   `firstname` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   `pozita` varchar(255) NOT NULL,
-  `pershkrimi` text NOT NULL
+  `pershkrimi` text NOT NULL,
+  `img` blob NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `team`
 --
 
-INSERT INTO `team` (`ID`, `firstname`, `lastname`, `pozita`, `pershkrimi`) VALUES
-(1, 'Elez', 'Kadrijaj', 'Drejtor', 'CEO');
+INSERT INTO `team` (`ID`, `firstname`, `lastname`, `pozita`, `pershkrimi`, `img`) VALUES
+(6, 'Elez', 'Kadrijaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067),
+(7, 'Edison', 'Alushaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067),
+(8, 'Elezz', 'Kadrijaj', 'Drejtor', 'Drejtor', 0x6d616e2e6a7067);
 
 --
 -- Indexes for dumped tables
@@ -60,7 +63,7 @@ ALTER TABLE `team`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

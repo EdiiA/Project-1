@@ -13,6 +13,7 @@
         public function insertVetura($vetura){
             $conn = $this->connection;
 
+            
             $emri = $vetura->getEmri();
             $vitiProdhimit = $vetura->getVitiProdhimit();
             $km = $vetura->getKm();
