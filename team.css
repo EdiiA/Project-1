@@ -1,38 +1,31 @@
 body{
     margin: 0%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
-    background-color: white ;
+    color: black;
+    background-color:white;
 }
-
-/* header */
-
 header, header>ul{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 header{
     background-color: #262626;
     height: 1.3em;
     width: 100%;
     align-items: center;
 }
-
 header>ul>li>a{
     color: white;
     text-decoration: none;
 }
-
 header>ul>li>a:hover{
     color: rgba(255, 255, 255, 0.637);
 }
-
 header>ul>li{
     padding: 1.2em;
     list-style: none;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-top: 0em;
 }
 
@@ -93,23 +86,27 @@ header>ul>li{
     justify-content:center;
     width: 100%;
     margin-top: 3em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     color: #262626;
 }
 
 .profile{
     width:100% ;
-    height: 25em;
     display: flex;
     flex-direction: row;
-    justify-content:space-evenly;
+    justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
 .team-img{
     width: 15em;
-    height: 20em;
     background-size: cover;
+}
+
+.team-txt{
+    width: 20%;
+    margin-left: 10em;
 }
 
 
@@ -226,12 +223,19 @@ footer{
         margin-bottom: 2em;
     }
 
+    .team-img-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .team-img{
         width: 60%;
         height: 50%;
     }
 
     .team-txt{
+        margin-left: 0em;
         width: 90%;
         height: 40%;
         text-align: center;
