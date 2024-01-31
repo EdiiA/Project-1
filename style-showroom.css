@@ -220,20 +220,29 @@ footer{
 }
 
 @media screen and (max-width: 1290px) {
+    body {
+        overflow-x: hidden; 
+    }
+    header {
+        height: 5em;
+    }
+
+    header>ul>li {
+        padding: 0.4em;
+    }
     header>ul{
         margin-left: -2.5em;
     }
-
     header{
         height: 5em;
         width: 100%;
         align-items: center;
+
     }
-    
     header>ul>li{
         padding: 0.4em;
         list-style: none;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .bgfoto{

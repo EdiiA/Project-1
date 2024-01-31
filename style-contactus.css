@@ -226,22 +226,29 @@ footer{
     margin-left: -0.7em;
 }
 @media screen and (max-width: 1200px){
-    body
+    body {
+        overflow-x: hidden; 
+    }
+    header {
+        height: 5em;
+    }
 
+    header>ul>li {
+        padding: 0.4em;
+    }
     header>ul{
         margin-left: -2.5em;
     }
-
     header{
         height: 5em;
         width: 100%;
         align-items: center;
+
     }
-    
     header>ul>li{
         padding: 0.4em;
         list-style: none;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .bgfoto{
@@ -259,21 +266,27 @@ footer{
         width: 85%;
         margin-left: 4em;
     }
+
+    #contact-txt{
+        
+    }
+
     .mbikontakt{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin-left: 0em;
     }
     .div-1{
-        border: 0;
+        padding-left: 4em;
+        border-right: 0;
     }
     .div-2{
         border-left: 0;
-        margin-left: -3em;
 
     }
     .div-3{
         border-left: 0;
-        margin-left: -3em;
     }
     .div-con{
         width: 85%;
