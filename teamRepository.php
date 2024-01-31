@@ -18,11 +18,7 @@
             $lastName = $team->getLName();
             $pozita = $team->getPozita();
             $pershkrimi = $team->getPershkrimi();
-<<<<<<< Updated upstream
-            $image = $team->getImage();
-=======
             $img = $team->getImage();
->>>>>>> Stashed changes
            
 
             $sql = "INSERT INTO team (firstname, lastname, pozita ,pershkrimi ,img) VALUES (?,?,?,?,?)";
@@ -41,7 +37,6 @@
             $team = $statement->fetchAll();
             return $team;
         }
-<<<<<<< Updated upstream
         public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi,$image){
             $conn = $this->connection;
             $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=?, img=? WHERE ID=?";
@@ -49,15 +44,6 @@
 
             $statement = $conn->prepare($sql);
             $statement->execute([$firstName, $lastName, $pozita, $pershkrimi,$image, $id]);
-=======
-        public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $img){
-            $conn = $this->connection;
-            $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=? img=? WHERE ID=?";
-
-
-            $statement = $conn->prepare($sql);
-            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi,$img, $id]);
->>>>>>> Stashed changes
             echo "<script>alert('U ndryshua me sukses!')</script>";
 
         }

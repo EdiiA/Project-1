@@ -112,7 +112,7 @@ header>ul>li{
 
 .collection{
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -122,7 +122,7 @@ header>ul>li{
     width:30em;
     height: 25em;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     border: 1px solid  #c2c2c2;
     margin: 10px;
     background-color:  #e2e2e2;

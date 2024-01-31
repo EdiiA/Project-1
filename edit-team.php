@@ -60,11 +60,7 @@ $team = $strep->getTeamById($id);
             </div><br>
             <div>
                 <label for="">Foto:</label>
-<<<<<<< Updated upstream
                 <input  class="input-field" type="file" name="image"  value="<?php echo $team['img']?>">
-=======
-                <input  class="input-field" type="file" name="img"  value="<?php echo $team['image']?>">
->>>>>>> Stashed changes
             </div>
 
         

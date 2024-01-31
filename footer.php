@@ -14,9 +14,9 @@
                             <h2>Our Links</h2>
 
                             <div>
-                                <p><a id='links' href='showroom.html'>SHOWROOM</a></p>
-                                <p><a id='links' href='about-us.html'>ABOUT US</a></p>
-                                <p><a id='links' href='contactus.html'>CONTACT US</a></p>
+                                <p><a id='links' href='showroom.php'>SHOWROOM</a></p>
+                                <p><a id='links' href='about-us.php'>ABOUT US</a></p>
+                                <p><a id='links' href='contactus.php'>CONTACT US</a></p>
                             </div>
                         </div>
                         <div class='f-fotot'>

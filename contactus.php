@@ -1,22 +1,4 @@
-<?php
-    if(!empty($_POST["input"])){
-        $name =$_POST["name"];
-        $surname =$_POST["surname"];
-        $email =$_POST["email"];
-        $messa =$_POST["messa"];
-        $toEmail ="elezkadrijaj18@gmail.com";
 
-
-        $mailHeaders = "Name:" . $name .
-        "\r\n Surname :" . $surname .
-        "\r\n Email : "  . $email .
-        "\r\n Message :" . $messa . "\r\n";
-
-        if(mail($toEmail, $name , $mailHeaders)){
-            $message = "Your Information is Received Successfully.";
-        }
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
