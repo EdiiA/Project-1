@@ -1,7 +1,10 @@
 <?php
-include 'teamRepository.php';
-$id = $_GET['id'];//e merr id e studentit prej url
+SESSION_START();
 
+include 'teamRepository.php';
+$id = $_GET['id'];
+
+$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown";
 $strep = new TeamRepository();
 $team = $strep->getTeamById($id);
 ?>
@@ -22,14 +25,14 @@ $team = $strep->getTeamById($id);
     ?>
 
     <!-- <h3>Edit Vetura</h3>
-    <form action="<?php echo $SERVER['PHP_SELF']?>" method="POST">
+    <form action="<?php //echo $SERVER['PHP_SELF']?>" method="POST">
     
-        <input type="text" name="emri"  value="<?php echo $vetura['Emri']?>"> <br> <br> 
-        <input type="text" name="vitiProdhimit"  value="<?php echo $vetura['VitiProdhimit']?>"> <br> <br>
-        <input type="text" name="km"  value="<?php echo $vetura['Km']?>"> <br> <br>
-        <input type="date" name="motori"  value="<?php echo $vetura['Motori']?>"> <br> <br>
-        <input type="text" name="hp"  value="<?php echo $vetura['Hp']?>"> <br> <br>
-        <input type="text" name="cmimi"  value="<?php echo $vetura['Cmimi']?>"> <br> <br>
+        <input type="text" name="emri"  value="<?php //echo $vetura['Emri']?>"> <br> <br> 
+        <input type="text" name="vitiProdhimit"  value="<?php //echo $vetura['VitiProdhimit']?>"> <br> <br>
+        <input type="text" name="km"  value="<?php //echo $vetura['Km']?>"> <br> <br>
+        <input type="date" name="motori"  value="<?php //echo $vetura['Motori']?>"> <br> <br>
+        <input type="text" name="hp"  value="<?php //echo $vetura['Hp']?>"> <br> <br>
+        <input type="text" name="cmimi"  value="<?php //echo $vetura['Cmimi']?>"> <br> <br>
         
         <input type="submit" name="editBtn" value="save"> <br> <br>
     </form> -->
@@ -61,6 +64,8 @@ $team = $strep->getTeamById($id);
             <div>
                 <label for="">Foto:</label>
                 <input  class="input-field" type="file" name="image"  value="<?php echo $team['img']?>">
+
+                <input type="hidden" name="modifikoi" value="<?php echo htmlspecialchars($editedBy); ?>">
             </div>
 
         
@@ -88,10 +93,9 @@ $team = $strep->getTeamById($id);
         $pozita = $_POST['pozita'];
         $pershkrimi = $_POST['pershkrimi'];
         $img = $_POST['image'];
-       
-        
+        $modifikim = $_POST['modifikoi'];
 
-        $strep->editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $img);
+        $strep->editTeam($id, $firstName, $lastName, $pozita, $pershkrimi, $img, $modifikim);
         header("location:AdminDashboard.php");
         exit();
     }

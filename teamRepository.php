@@ -19,12 +19,13 @@
             $pozita = $team->getPozita();
             $pershkrimi = $team->getPershkrimi();
             $img = $team->getImage();
+            $modifikim = $team->getModifikim();
            
 
-            $sql = "INSERT INTO team (firstname, lastname, pozita ,pershkrimi ,img) VALUES (?,?,?,?,?)";
+            $sql = "INSERT INTO team (firstname, lastname, pozita ,pershkrimi ,img, Modifikim) VALUES (?,?,?,?,?,?)";
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi, $img]);
+            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi, $img, $modifikim]);
 
             echo "<script>alert('U shtua me sukses!')</script>";
         }
@@ -37,16 +38,16 @@
             $team = $statement->fetchAll();
             return $team;
         }
-        public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi,$image){
+        public function editTeam($id, $firstName, $lastName, $pozita, $pershkrimi,$image,$modifikim){
             $conn = $this->connection;
-            $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=?, img=? WHERE ID=?";
+            $sql = "UPDATE team SET firstname=?, lastname=?, pozita=?, pershkrimi=?, img=?, Modifikim=? WHERE ID=?";
 
 
             $statement = $conn->prepare($sql);
-            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi,$image, $id]);
+            $statement->execute([$firstName, $lastName, $pozita, $pershkrimi,$image, $modifikim, $id]);
             echo "<script>alert('U ndryshua me sukses!')</script>";
-
         }
+        
         function deleteTeam($id){
             $conn = $this->connection;
 

@@ -7,10 +7,10 @@
     $strep = new VeturaRepository();
     $veturat = $strep->getAllVetura();
 
-
     $mess = new Contact();
     $messagee = $mess->getAllComments();
 
+    $editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown";
     $te = new TeamRepository();
     $team = $te->getAllTeam();
 
@@ -55,6 +55,7 @@
                         <th>Hp</th>
                         <th>Cmimi</th>
                         <th>Foto</th>
+                        <th>Edited/Added</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +68,7 @@
                             <td><?php echo $vetura['HP'];?></td> <!-- Changed 'HP' to 'Hp' assuming this is the correct case in your database -->
                             <td><?php echo $vetura['Cmimi'];?></td>
                             <td><?php echo $vetura['Foto'];?></td>
+                            <td><?php echo $vetura['Modifikim'];?></td>
                             <td class="edit-del"><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
                             <td class="edit-del"><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
                         </tr>
@@ -120,10 +122,10 @@
             <tr>
             <th>First Name</th>
                 <th>Last Name</th>
-                <th>Pozita</th>
-                <th>Pershkrimi</th>
+                <th>Position</th>
+                <th>Description</th>
                 <th>Image</th>
-           
+                <th>Edited/Added</th>
             </tr>
             </thead>
             <tbody>
@@ -134,6 +136,7 @@
                         <td><?php echo $teams['pozita'];?></td>
                         <td><?php echo $teams['pershkrimi'];?></td>
                         <td><?php echo $teams['img'];?></td>
+                        <td><?php echo $teams['Modifikim'];?></td>
                         <td class="edit-del"><a href='edit-team.php?id=<?php echo $teams['ID'];?>'>Edit</a></td>
                         <td class="edit-del"><a href='delete-team.php?id=<?php echo $teams['ID'];?>'>Delete</a></td>
                     </tr>

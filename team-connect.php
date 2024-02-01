@@ -1,18 +1,19 @@
 <?php
 class Team_connect{
-
         private $ID;
         private $firstName;
         private $lastName;
         private $pozita;
         private $pershkrimi;
         private $image ;
-        public function __construct( $firstName,$lastName,$pozita,$pershkrimi, $image){
+        private $modifikim;
+        public function __construct( $firstName,$lastName,$pozita,$pershkrimi, $image, $modifikim){
             $this->firstName=$firstName;
             $this->lastName=$lastName;
             $this->pozita=$pozita;
             $this->pershkrimi=$pershkrimi;
             $this->image=$image;
+            $this->modifikim=$modifikim;
         }
         public function getFName(){
             return $this->firstName;
@@ -44,6 +45,13 @@ class Team_connect{
         public function setImage($image){
             $this->image = $image;
         }
+        public function getModifikim(){
+            return $this->modifikim;
+        }
+        public function setModifikim($modifikim){
+            $this->modifikim = $modifikim;
+        }
+
         public function __toString(){
             return "Team: ".$this->firstName."dhe".$this->lastName." dhe pershkrimi ".$this->pershkrimi;
         }

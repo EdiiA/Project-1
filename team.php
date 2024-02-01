@@ -39,7 +39,7 @@
 
                     <div class="team-txt">
                         <p id="team-title"><?php echo $teams['firstname'];?> <?php echo $teams['lastname'];?></p>
-                        <!-- <p id="team-title"><?php echo $teams['lastname'];?></p> -->
+                        <!-- <p id="team-title"><?php //echo $teams['lastname'];?></p> -->
                         <p id="team-text"><?php echo $teams['pozita'];?></p>
                         <p id="team-text"><?php echo $teams['pershkrimi'];?></p>
                     </div>
