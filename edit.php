@@ -77,8 +77,10 @@ $vetura = $strep->getVeturaById($id);
                 <input type="hidden" name="modifikoi" value="<?php echo htmlspecialchars($editedBy); ?>">
             </div>
             
-            <input class="edit-submit" type="submit" name="editBtn" value="save">
-            <button type="submit" class="edit-submit"><a href="AdminDashboard.php">Dashboard</a></button>
+            <div>
+                <input class="edit-submit" type="submit" name="editBtn" value="save">
+                <button type="submit" class="edit-submit"><a href="AdminDashboard.php">Dashboard</a></button>
+            </div>
             
             <!-- <button name="editBtn"><a href="AdminDashboard.php">Save Changes</a></button> -->
         </form>
