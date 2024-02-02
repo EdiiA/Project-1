@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+ -- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
@@ -39,14 +39,6 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`first_name`, `last_name`, `email`, `mess`) VALUES
-('', '', '', ''),
-('Elez', 'Kadrijaj', 'test@gmail.com', ''),
-('Elez', 'Kadrijaj', 'test@gmail.com', ''),
-('Elez', 'Kadrijaj', 'test1@gmail.com', 'BISMILAH'),
-('Edison', 'Alushaj', 'elezkadrijaj3@gmail.com', 'Hello ADMIN'),
-('Elez', 'Kadrijaj', 'ek67709@ubt-uni.net', 'Hello baby'),
-('', '', '', ''),
-('Edison', 'Alusha', 'test3@gmail.com', 'Hello Admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
