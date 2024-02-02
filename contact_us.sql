@@ -1,9 +1,9 @@
- -- phpMyAdmin SQL Dump
+-- phpMyAdmin SQL Dump
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2024 at 04:00 PM
+-- Generation Time: Feb 02, 2024 at 09:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,6 +39,7 @@ CREATE TABLE `contact_us` (
 --
 
 INSERT INTO `contact_us` (`first_name`, `last_name`, `email`, `mess`) VALUES
+('Elez ', 'Kadrijaj', 'elezkadrijaj18@gmail.com', 'Pershendetje:Testimi Final');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2024 at 12:27 AM
+-- Generation Time: Feb 02, 2024 at 09:25 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -39,10 +39,9 @@ CREATE TABLE `form` (
 --
 
 INSERT INTO `form` (`username`, `email`, `psw`, `roli`) VALUES
-('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
-('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
-('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin'),
-('edison', 'edison.alushaj3@gmail.com', 'edison123', 'admin');
+('elezkadrijaj', 'e67709@ubt-uni.net', '12345678', 'admin'),
+('edisonalushaj', 'ea67877@ubt-uni.net', '12345678', ''),
+('edison', 'edisonalushaj@gmail.com', '12345678', 'admin');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 02, 2024 at 08:54 PM
+-- Generation Time: Feb 02, 2024 at 09:24 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -42,9 +42,8 @@ CREATE TABLE `team` (
 --
 
 INSERT INTO `team` (`ID`, `firstname`, `lastname`, `pozita`, `pershkrimi`, `img`, `Modifikim`) VALUES
-(6, 'Elez', 'Kadrijaj', 'Co CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067, 'Edited By: edison'),
-(7, 'Edison', 'Alushaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067, 'Edited By: edison'),
-(9, 'Filan', 'Fisteku', 'SEO', 'Makes Offers to clients', 0x6d616e2e6a7067, 'Edited By: edison');
+(11, 'Elez', 'Kadrijaj', 'CO CEO', 'Drejtor ne Grande Auto Sallon', 0x494d475f333839322e6a7067, 'Edited By: elezkadrijaj'),
+(12, 'Edison', 'Alushaj', 'CO CEO', 'Drejtor ne Grande Auto Sallon', 0x494d475f373030322e6a7067, 'Added By: elezkadrijaj');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +63,7 @@ ALTER TABLE `team`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
