@@ -38,13 +38,6 @@ header>ul>li{
     margin-top: 0em;
 }
 
-footer{
-    background-color: #262626;
-    color: white;
-    width: 100%;
-    height: auto;
-}
-
 .edit-title{
     color: #262626;
     width: 100%;
@@ -112,6 +105,16 @@ input{
     margin-left: 1em;
 }
 
+.input-field-3{
+    background: #eaeaea;
+    margin: 15px 20px;
+    border-radius: 3px;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    margin-left: 1em;
+}
+
 .edit-submit{
     font-size: 1.2em;
     width: 11em;
@@ -119,6 +122,18 @@ input{
     border: 0.15em solid white;
     border-radius: 1.5em;
     outline: 0;
+}
+
+.edit-submit a{
+    color: #262626;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #262626;
+    color: white;
+    width: 100%;
+    height: auto;
 }
 
 .footeri{
@@ -198,23 +213,35 @@ input{
     }
 
     .form-div{
-        height: 60em;
+        height: auto;
+        margin-bottom: 3em;
     }
 
-    .register-form {
+    .edit-form {
         width: 80%;
         display: flex;
         flex-direction: column;
+        
     }
 
-    .register-form div{
+    .edit-form div :first-child{
+        margin-top: 1em;
+    }
+
+    .edit-form div{
         display: flex;
         flex-direction: column;
         margin-top: 0em;
+        
     }
 
     .input-field-2{
         width: 15em;
+    }
+
+    .edit-submit{
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
 
     .footeri {

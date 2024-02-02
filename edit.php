@@ -1,7 +1,10 @@
 <?php
-include 'VeturaRepository.php';
-$id = $_GET['id'];//e merr id e studentit prej url
+SESSION_START();
 
+include 'VeturaRepository.php';
+$id = $_GET['id'];
+
+$editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown";
 $strep = new VeturaRepository();
 $vetura = $strep->getVeturaById($id);
 ?>
@@ -70,10 +73,15 @@ $vetura = $strep->getVeturaById($id);
             <div>
                 <label for="">Foto:</label>
                 <input  class="input-field" type="file" name="foto"  value="<?php echo $vetura['Foto']?>">
+            
+                <input type="hidden" name="modifikoi" value="<?php echo htmlspecialchars($editedBy); ?>">
             </div>
             
-            <input class="edit-submit" type="submit" name="editBtn" value="save">
-
+            <div>
+                <input class="edit-submit" type="submit" name="editBtn" value="save">
+                <button type="submit" class="edit-submit"><a href="AdminDashboard.php">Dashboard</a></button>
+            </div>
+            
             <!-- <button name="editBtn"><a href="AdminDashboard.php">Save Changes</a></button> -->
         </form>
     </div>
@@ -97,9 +105,9 @@ $vetura = $strep->getVeturaById($id);
         $hp = $_POST['hp'];
         $cmimi = $_POST['cmimi'];
         $foto = $_POST['foto'];
-        
+        $modifikim = $_POST['modifikoi'];
 
-        $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi, $foto);
+        $strep->editVetura($id,$emri,$vitiProdhimit,$km,$motori,$hp,$cmimi, $foto, $modifikim);
         header("location:AdminDashboard.php");
         exit();
     }

@@ -7,10 +7,10 @@
     $strep = new VeturaRepository();
     $veturat = $strep->getAllVetura();
 
-
     $mess = new Contact();
     $messagee = $mess->getAllComments();
 
+    $editedBy = isset($_SESSION['name']) ? "Edited By: " . $_SESSION['name'] : "Edited By: Unknown";
     $te = new TeamRepository();
     $team = $te->getAllTeam();
 
@@ -36,7 +36,7 @@
     </div>
 
     <div class="titlee">
-        <p>Cars</p>
+        <p>Cars Table</p>
     </div>
 
     <div class="register-link">
@@ -55,6 +55,7 @@
                         <th>Hp</th>
                         <th>Cmimi</th>
                         <th>Foto</th>
+                        <th>Edited/Added</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -67,6 +68,7 @@
                             <td><?php echo $vetura['HP'];?></td> <!-- Changed 'HP' to 'Hp' assuming this is the correct case in your database -->
                             <td><?php echo $vetura['Cmimi'];?></td>
                             <td><?php echo $vetura['Foto'];?></td>
+                            <td><?php echo $vetura['Modifikim'];?></td>
                             <td class="edit-del"><a href='edit.php?id=<?php echo $vetura['ID'];?>'>Edit</a></td>
                             <td class="edit-del"><a href='delete.php?id=<?php echo $vetura['ID'];?>'>Delete</a></td>
                         </tr>
@@ -114,33 +116,37 @@
     <div class="register-linkT">
         <a href="register-team.php" style="color: #f5f5f5;">Register</a>
     </div>
-    <div class="contact-table">
-        <table  class="table">
-            <thead>
-            <tr>
-            <th>First Name</th>
-                <th>Last Name</th>
-                <th>Pozita</th>
-                <th>Pershkrimi</th>
-                <th>Image</th>
-           
-            </tr>
-            </thead>
-            <tbody>
-                <?php foreach($team as $teams) { ?> <!--e hapim foreach-->
-                    <tr>
-                    <td><?php echo $teams['firstname'];?></td>
-                        <td><?php echo $teams['lastname'];?></td>
-                        <td><?php echo $teams['pozita'];?></td>
-                        <td><?php echo $teams['pershkrimi'];?></td>
-                        <td><?php echo $teams['img'];?></td>
-                        <td class="edit-del"><a href='edit-team.php?id=<?php echo $teams['ID'];?>'>Edit</a></td>
-                        <td class="edit-del"><a href='delete-team.php?id=<?php echo $teams['ID'];?>'>Delete</a></td>
-                    </tr>
-                <?php }?> 
-            </tbody>
-        </table>
-    </div>                    
+
+    <div class="dash-resp">
+        <div class="contact-table2">
+            <table  class="table">
+                <thead>
+                <tr>
+                <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Position</th>
+                    <th>Description</th>
+                    <th>Image</th>
+                    <th>Edited/Added</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <?php foreach($team as $teams) { ?> <!--e hapim foreach-->
+                        <tr>
+                        <td><?php echo $teams['firstname'];?></td>
+                            <td><?php echo $teams['lastname'];?></td>
+                            <td><?php echo $teams['pozita'];?></td>
+                            <td><?php echo $teams['pershkrimi'];?></td>
+                            <td><?php echo $teams['img'];?></td>
+                            <td><?php echo $teams['Modifikim'];?></td>
+                            <td class="edit-del"><a href='edit-team.php?id=<?php echo $teams['ID'];?>'>Edit</a></td>
+                            <td class="edit-del"><a href='delete-team.php?id=<?php echo $teams['ID'];?>'>Delete</a></td>
+                        </tr>
+                    <?php }?> 
+                </tbody>
+            </table>
+        </div>    
+    </div>                
     <?php
         include('footer.php');
         echo $footer1;

@@ -35,17 +35,16 @@
         <div class="team">
             <?php foreach ($team as $teams) { ?>
                 <div class="profile">
-                    <div ><img src="Img/<?php echo $teams['img'];?>" class="team-img" alt=""></div>
+                    <div class="team-img-div"><img src="Img/<?php echo $teams['img'];?>" class="team-img" alt=""></div>
 
                     <div class="team-txt">
-                        <p id="team-title"><?php echo $teams['firstname'];?></p>
-                        <p id="team-title"><?php echo $teams['lastname'];?></p>
+                        <p id="team-title"><?php echo $teams['firstname'];?> <?php echo $teams['lastname'];?></p>
+                        <!-- <p id="team-title"><?php //echo $teams['lastname'];?></p> -->
                         <p id="team-text"><?php echo $teams['pozita'];?></p>
                         <p id="team-text"><?php echo $teams['pershkrimi'];?></p>
                     </div>
                 </div>
                 <?php } ?>
-            
         </div>
        
 

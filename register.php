@@ -2,6 +2,8 @@
     include_once 'Vetura.php';
     include_once 'VeturaRepository.php';
 
+    $addedBy = isset($_SESSION['name']) ? "Added By: " . $_SESSION['name'] : "Added By: Unknown";
+
     if (isset($_POST['submitbtn'])) {
         $emri = $_POST['emri'];
         $vitiProdhimit = $_POST['vitiProdhimit'];
@@ -10,8 +12,9 @@
         $hp = $_POST['hp'];
         $cmimi = $_POST['cmimi'];
         $foto = $_POST['foto'];
-    
-        $vetura = new Vetura($emri,$vitiProdhimit,$km,$motori,$hp,$cmimi,$foto);
+        $modifikim = $_POST['modifikoi'];
+        
+        $vetura = new Vetura($emri,$vitiProdhimit,$km,$motori,$hp,$cmimi,$foto,$modifikim);
     
         $veturaRepository = new VeturaRepository();
         $veturaRepository->insertVetura($vetura);
@@ -68,9 +71,11 @@
             <div>
                 <label for="">Foto:</label>
                 <input  class="input-field" type="file" name="foto">
+
+                <input type="hidden" name="modifikoi" value="<?php echo htmlspecialchars($addedBy); ?>">
             </div>
             
-        <input  type="submit" class="register-submit" name="submitbtn" value="Submit" >
+            <input  type="submit" class="register-submit" name="submitbtn" value="Submit" >
 
 
         </form>
