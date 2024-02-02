@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 30, 2024 at 06:16 PM
+-- Generation Time: Feb 02, 2024 at 08:54 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -33,17 +33,18 @@ CREATE TABLE `team` (
   `lastname` varchar(255) NOT NULL,
   `pozita` varchar(255) NOT NULL,
   `pershkrimi` text NOT NULL,
-  `img` blob NOT NULL
+  `img` blob NOT NULL,
+  `Modifikim` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Dumping data for table `team`
 --
 
-INSERT INTO `team` (`ID`, `firstname`, `lastname`, `pozita`, `pershkrimi`, `img`) VALUES
-(6, 'Elez', 'Kadrijaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067),
-(7, 'Edison', 'Alushaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067),
-(8, 'Elezz', 'Kadrijaj', 'Drejtor', 'Drejtor', 0x6d616e2e6a7067);
+INSERT INTO `team` (`ID`, `firstname`, `lastname`, `pozita`, `pershkrimi`, `img`, `Modifikim`) VALUES
+(6, 'Elez', 'Kadrijaj', 'Co CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067, 'Edited By: edison'),
+(7, 'Edison', 'Alushaj', 'CEO', 'Drejtor ne Grande AutoSallon', 0x6d616e2e6a7067, 'Edited By: edison'),
+(9, 'Filan', 'Fisteku', 'SEO', 'Makes Offers to clients', 0x6d616e2e6a7067, 'Edited By: edison');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `team`
 -- AUTO_INCREMENT for table `team`
 --
 ALTER TABLE `team`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
