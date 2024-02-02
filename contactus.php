@@ -89,7 +89,7 @@
                       $res = $obj->contact_us($_POST);
 
                       if($res == true){
-                        echo "<script>alert('Query successfully Submitted .Thank You')</script>";
+                        echo "<script>alert('Message sent successful.Thank You')</script>";
                       }
                       else{
                         echo "<script>alert('Something Went wrong!!')</script>";
