@@ -109,8 +109,10 @@ header>ul>li{
     padding-left: 0;
 }
 
+
 .collection{
     display: flex;
+    flex-direction:row;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
