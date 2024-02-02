@@ -61,13 +61,13 @@ $team = $strep->getTeamById($id);
                 <label for="">Description:</label>
                 <input class="input-field" type="text" name="pershkrimi" value="<?php echo $team['pershkrimi']?>">
             </div><br>
+            
             <div>
                 <label for="">Image:</label>
                 <input  class="input-field" type="file" name="image"  value="<?php echo $team['img']?>">
 
                 <input type="hidden" name="modifikoi" value="<?php echo htmlspecialchars($editedBy); ?>">
             </div>
-
         
             <div>
                 <input class="edit-submit" type="submit" name="editBtn" value="save">
