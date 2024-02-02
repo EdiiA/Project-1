@@ -159,11 +159,16 @@ form p a{
         flex-direction: column;
         width: 85%;
         text-align: center; 
-        height: 140%;
+        height: 60em;
         margin-top: 3em;
         box-shadow:0;
         margin-bottom: 3em;
     }
+
+    .signUP-txt-div{
+        width: 19.5em;
+    }
+
     .signUp-form{
         width: 85%;
         margin-top: 3em;
@@ -171,28 +176,37 @@ form p a{
     }
     #text-title{
         font-size:40px;
-        margin-left: 0;
+        margin-left: 0.8em;
         margin-top: 0;
         width: 55%;
     }
     #text-title-2{
         font-size: 35px;
+
+    }
+
+    .bg-logo {
+        width: 13em;
+        margin-top: -2em;
     }
     
     .bgfoto{
+        margin-left: 0em;
+        width: 20em;
+        display: flex;
         justify-content: center;
         align-items: center;
     }
     #logo1{
         width: 10em;
         height: 5em;
-        margin-right: 12em;
+        margin-left: -2em;
         margin-top: 3em;
         margin-bottom: 0;
         
     }
-    .bgfoto p img{
-        margin-left: 1em;
+    .bgfoto p img {
+        margin-left: 0em;
     }
     .signUp-text{
         width:85%;
@@ -200,7 +214,7 @@ form p a{
         margin-top: 1em;
     }
     #text-p{
-        width: 45%;
+        width: 95%;
         font-size: 12px;
     }
 }

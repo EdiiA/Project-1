@@ -156,7 +156,7 @@ form p a{
         flex-direction: column;
         width: 85%;
         text-align: center; 
-        height: 140%;
+        height: 70em;
         margin-top: 3em;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 3em;
@@ -186,13 +186,20 @@ form p a{
         margin-bottom: 0;
         
     }
+
+    .bgfoto2{
+    }
+
+    .bg-logo{
+        width: 80%;
+    }
+
     .bg-foto img{
-        
-        
+        width: 100%;
     }
     .signUp-text{
         width:85%;
-        height:40%;
+        height:50em;
         margin-top: 1em;
     }
     #text-p{
