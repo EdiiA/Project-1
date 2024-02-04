@@ -1,5 +1,5 @@
-<!-- <?php include('user.php');?>
-<?php include('validation.php');?> -->
+<!-- <?php //include('user.php');?>
+<?php //include('validation.php');?> -->
 
 <?php
     session_start();
