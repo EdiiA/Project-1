@@ -4,6 +4,11 @@
 <?php
     session_start();
 
+    // if(isset($_SESSION['username'])){
+    //     header("location:home-page.php");
+    //     die;
+    // }
+
     include("db.php");
 
     if($_SERVER['REQUEST_METHOD'] == "POST"){
@@ -37,8 +42,8 @@
         else{
             echo "<script type='text/javascript'> alert('Wrong username or password')</script>";
         }
-
     }
+    session_destroy();
 ?>    
 
 <html>
