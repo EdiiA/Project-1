@@ -14,7 +14,16 @@
     $te = new TeamRepository();
     $team = $te->getAllTeam();
 
-
+    if (!isset($_SESSION['name'])) {
+        header("Location:login.php");
+        exit;
+    }
+    
+    
+    if ( $_SESSION['roli'] !== 'admin') {
+        header("Location:login.php"); 
+      exit;
+    }
 ?>
 
 <!DOCTYPE html>
